@@ -1,0 +1,11 @@
+@media only screen and (min-width: 425px )and (max-width:768px){
+    .Heading{
+        font-size: xx-large;
+        text-align: center;
+        justify-content: center;
+
+    }
+    .subHeading{
+        font-size: x-large;
+    }
+}
