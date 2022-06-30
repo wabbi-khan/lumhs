@@ -1,0 +1,108 @@
+
+
+.Content ul a{
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+.items i{
+	width: 300px;
+}
+.about-content{
+	text-align: left;
+	margin-right: 20px ;
+	margin-top: 20px;
+}
+
+.slider-box-img1{
+	opacity: 0.9; 
+	margin-left: 47%; 
+	height: 100%;
+	width: 50%;  
+	background-color: #181215;
+	position: absolute;
+}
+.gallery-img{
+	 opacity: 0.9; 
+	 height: 100%; 
+	 width: 50%;  
+	 background-color: #181215; 
+	 position: absolute;
+}
+.gallery-img span{
+	border-bottom: 5px solid red; font-size: 35px; margin-top: 20px; position: absolute;
+}
+
+.slider-container li img{
+	margin-left: 30px;
+}
+
+
+
+.slider-nav{
+	background-color: red;
+	height: 60px;
+	width:60px ;
+	margin-top: 120px;
+	text-align: center;
+	 border-radius: 50px;
+}
+.img-2021{
+	 margin-left: 30px;
+	 max-width: 31%;
+	 background-image:url('../assets/images/web images/g2.jpeg');
+	 height: 300px;
+	 position: relative;
+	 background-size: cover;
+}
+.img-2022{
+	 margin-left: 30px;
+	 max-width: 31%;
+	 background-image:url('../assets/images/web images/g1.png');
+	 height: 300px;
+	 position: relative;
+	 background-size: cover;
+}
+.img-2020{
+	 margin-left: 30px;
+	 max-width: 31%;
+	 background-image:url('../assets/images/web images/Untitled-2.jpg');
+	 height: 300px;
+	 position: relative;
+	 background-size: cover;
+}
+.fa-long-arrow-right:hover{
+	color: #bd0f0f;
+}
+.swiffy-slider{
+	margin-top: 150px;
+	 color:#fff;position: absolute;
+  z-index:5;
+}
+
+
+.carousel-item{
+  color:#fff;position: relative;
+  z-index:5;
+}
+.carousel-control-prev{
+	color:#fff;position: absolute;
+	z-index:5;
+}
+.gallery-section .slider-img{
+	width: 400px;
+}
+.carouselExampleControls{
+	width: 100%;
+}
+
+
+
+/*Testimonial End*/
+
+/*Departments*/
+
+
+

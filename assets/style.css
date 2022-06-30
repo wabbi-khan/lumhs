@@ -1,0 +1,788 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+
+	overflow-x: hidden;
+	background-color: #f6f6f6;
+}
+nav{
+	margin-bottom: -13px !important;
+}
+.Content ul a{
+	text-decoration: none;
+	color: #fff;
+}
+.home-content{
+	height: 100vh;
+	background-image:url('../assets/images/web images/g1.png');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+}
+.header-icons{
+	margin-right: 50px;
+}
+.header-icons i{
+	 color: #C20303;
+	margin-right: 10px;
+}
+.header-icons a:hover{
+	font-size: 30px;
+}
+.navi{
+	border-top-left-radius: revert;
+}
+.navi ul{
+	text-align: center;
+}
+.navi ul li{
+	margin: 2px;
+	display: inline-block;
+}
+.header-social ul{
+	margin-right: 100px;
+	text-align: right;
+}
+.header-social ul li{
+	margin: 10px;
+	color: #bd0f0f;
+	margin-top: 30px;
+	display: inline-block;
+}
+.carousel-caption form{
+	margin-left:-120px;position: static; margin-bottom:50px
+}
+.search-field{
+	width:255px ;
+	height: 60px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+}
+/*business{
+	width:250px ;
+}*/
+.opd{
+	margin: 0px 8px;
+}
+.search-button{
+	height: 60px;
+	width: 180px;
+	font-size: 13px !important;
+	background-color: #bd0f0f;
+	border: none;
+	color: #fff;
+	border-style: none;
+	border-radius: 20px;
+}
+.form-box{
+
+	    margin-top: 300px;
+    background: rgba(255, 255, 255, 0.5);
+margin-bottom: 0px;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+.form-box input
+{
+	width:15px; margin: 20px 5px 20px 20px;
+            height: 60px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+}
+/*Home Style*/
+.column-2 {
+/*  background: url('../assets/images/web images/g1.png');*/
+  float: left;
+  width: 100%;
+*/  height: 480px;
+  margin-bottom: 70px;
+  background-color: #FEDE00;
+  line-height:2;
+  background-position: center;
+}
+
+/*.transparentbox {
+	width: 730px;
+   opacity: 0.5;
+   height: 100px;
+   margin: 280px 0px 0px 230px;
+   background-color: #ffffff;
+   border-radius: 10px;
+   filter: alpha(opacity=60); 
+ }*/
+
+/*.transparentbox input{
+   font-weight: bold;
+   background-color: blue !important;*/
+  /* opacity: 0.1px;*/
+  /* margin: 20px 10px 0px 10px;
+   height: 60px;
+   opacity: 0.9;
+   border-radius: 20px;
+}*/
+input::placeholder {
+	text-align: center;
+	font-size: 13px;
+}
+.transparentbox button{
+	height: 60px;
+	border-radius:30px;
+	width: 150px;
+}
+.flexer .items{
+	color: #fff;
+	width: 25%; background-color: #C20303;
+	height: 120px;
+	padding-bottom: 20px;
+	text-align: center;
+	margin-top: -70px;
+}
+.flexer .items:hover{
+	background-color: #950f0f;
+	color: #fff;
+	text-decoration: none;
+}
+.flexer .items p {
+	font-size: 15px;
+	padding-top: 20px;
+	margin-bottom: 5px;
+}
+/*.flexer .item1{
+		padding-top: 20px;
+	color: #000;
+	font-size: 20px;
+	background-color:red;
+}*/
+.flexer .item3 {
+	background-color: green;
+}
+.flexer{
+	background-color: #C20303;
+}
+.about-us-section{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 0px;
+}
+.about-us-section-content{
+	margin-top: 50px;
+	height: 600px;
+}
+.about-us-section h1{
+	color: #000000;
+	margin: 100px 0px 70px 0px;
+}
+.about-us-section h1:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 7%; /* Change this to whatever width you want. */
+    padding-top: 10px; /* This creates some space between the element and the border. */
+    border-bottom: 6px solid #bd0f0f; /* This creates the border. Replace black with whatever color you want. */
+    border-radius: 3px;
+}
+.about-us-btn:hover{
+	background-color: #fff;
+	color:red ;
+}
+.see-all-btn:hover{
+	background-color: #fff;
+	color:#bd0f0f ;
+}
+.about-us-left{
+/*background: url('../assets/images/web images/Untitled-2.jpg');*/
+/*width: 300px;*/
+	/*background-color: green;
+	background-repeat: no-repeat;
+	height: 350px;
+	   background-size: cover;
+  background-position: center;*/
+}
+.items i{
+	width: 300px;
+}
+.about-content{
+	text-align: center;
+/*	text-align: justify-all;*/
+	color: black;
+	text-align: left;
+	line-height: 1.6;
+	font-size: 16px;
+	margin-right: 20px ;
+	margin-top:0px;
+}
+.read-more-btn{
+
+	font-weight: bold;
+	border-radius: 25px;
+	width: 120px;
+	background-color: #bd0f0f;
+	color:#fff;
+	height: 50px;
+	border: none;
+}
+
+.slider-box-img1{
+	opacity: 0.9; 
+	margin-left: 47%; 
+	height: 100%;
+	width: 50%;  
+	background-color: #181215;
+	position: absolute;
+}
+.gallery-img{
+	 opacity: 0.9; 
+	 height: 100%; 
+	 width: 50%;  
+	 background-color: #181215; 
+	 position: absolute;
+}
+.gallery-img span{
+	border-bottom: 5px solid red; font-size: 35px; margin-top: 20px; position: absolute;
+}
+.gallery-section {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../assets/images of gallery/54.jpg') no-repeat 0, 0;
+  height: 900px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.gi{
+	margin-top: 33px;
+}
+/*.imager{
+    margin-left: 30px;
+}*/
+.slider-container li img{
+	margin-left: 30px;
+}
+
+.gallery-section:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.8;
+  background-color: #bd0f0f;
+}
+.gallery-section h1{
+  color:#fff;position: absolute;
+  z-index:5;
+  margin-bottom: 680px;
+}
+.gallery-section h1:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 80%; /* Change this to whatever width you want. */
+    padding-top: 10px; /* This creates some space between the element and the border. */
+    border-bottom: 6px solid #666666; /* This creates the border. Replace black with whatever color you want. */
+    border-radius: 5px;
+}
+.gallery-section img{
+ color:#fff;position: relative;
+  z-index:9;
+}
+.slider-nav{
+	background-color: red;
+	height: 60px;
+	width:60px ;
+	margin-top: 120px;
+	text-align: center;
+	 border-radius: 50px;
+}
+.img-2021{
+	 margin-left: 30px;
+	 max-width: 31%;
+	 background-image:url('../assets/images/web images/g2.jpeg');
+	 height: 300px;
+	 position: relative;
+	 background-size: cover;
+}
+.img-2022{
+	 margin-left: 30px;
+	 max-width: 31%;
+	 background-image:url('../assets/images/web images/g1.png');
+	 height: 300px;
+	 position: relative;
+	 background-size: cover;
+}
+.img-2020{
+	 margin-left: 30px;
+	 max-width: 31%;
+	 background-image:url('../assets/images/web images/Untitled-2.jpg');
+	 height: 300px;
+	 position: relative;
+	 background-size: cover;
+}
+/*.logo{
+	 background-image:url('../assets/images/web images/logo.png');
+	 background-size: cover;
+	 height: 100px;
+	 width: 100px;
+}
+*/
+.fa-long-arrow-right:hover{
+	color: #bd0f0f;
+}
+.swiffy-slider{
+	margin-top: 150px;
+	 color:#fff;position: absolute;
+  z-index:5;
+}
+
+.gallery-section .gallery-btn{
+ color:#fff;position: relative+;
+  z-index:9;
+  margin-top:800px ;
+
+}
+.carousel-item{
+  color:#fff;position: relative;
+  z-index:5;
+}
+.carousel-control-prev{
+	color:#fff;position: absolute;
+	z-index:5;
+}
+.gallery-section .slider-img{
+	width: 400px;
+}
+.carouselExampleControls{
+	width: 100%;
+}
+.gallery-section .gallery-btn{
+	border-radius: 20px;
+	width: 100px;
+	background-color: green;
+	color: #fff;
+	height: 40px;
+	align-content: center;
+	margin-top: 100px;
+}
+.services-section{
+	text-align: center;
+	height: 500px;
+	width: 100%;
+	background-color: #c1c1c1;
+}
+/*.services-section h1{
+	padding-top: 50px;
+	color: #666666;
+}*/
+.services-section .service-card{
+	height: 200px;
+	width: 200px;
+	margin: 50px;
+	background-color: #fff;
+}
+.see-all-btn {
+	height: 50px;
+	border-radius:30px;
+	background-color: #bd0f0f;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	width: 120px;
+}
+.news-events{
+	margin-left: 80px;
+	margin-right: 80px;
+	text-align: center;
+	margin-top: 10px !important;
+}
+.news-events h1{
+	 color: black !important;
+    font-size: 30px;
+    line-height: 95px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.news-events h1:after {
+    text-align: center;
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 15%; /* Change this to whatever width you want. */
+ /* This creates some space between the element and the border. */
+    border-bottom: 6px solid #bd0f0f; /* This creates the border. Replace black with whatever color you want. */
+    border-radius: 5px;
+    margin-top: -20px;
+}
+.news-events .news-content-area{
+	/*width: 90%;*/
+	height: 430px;
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+/*.container-fluid1 .row .card{
+	border: 2px solid red;
+	border-radius: 20px;
+}*/
+
+.news-heading{
+	float: left;
+	text-align: left;
+	font-weight: bold;
+	color: #C20303;
+}
+.comments-area{
+	text-align: left;
+}
+.comment-data{
+	margin: 0px 5px;
+}
+/*.testimonial{
+	height: 600px;
+	width: 100.our-webcoderskull .cnt-block	margin-top: 50px;
+	background-color: red;
+}*/
+.testimonial {
+	float: left;
+  margin: 0px;
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../assets/images/web images/testimonoal.jpg') no-repeat 0, 0;
+  height: 1200px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size:cover ;
+  position: relative;
+}
+
+.testimonial:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.7;
+  
+}
+.testimonial h1{
+  color:#fff;position: absolute;
+  z-index:5;
+  margin-bottom: 1000px;
+}
+.testimonial h1:after {
+    text-align: center;
+    padding-top: 6px;
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 70%; /* Change this to whatever width you want. */
+    /* This creates some space between the element and the border. */
+    border-bottom: 6px solid #666666; /* This creates the border. Replace black with whatever color you want. */
+    border-radius: 5px;
+}
+.testimonial .container {
+/*    background-color: white;*/
+position: absolute;
+z-index: 5;
+    text-align: center;
+/*    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    margin-bottom: 50px*/
+}
+
+.testimonial .title {
+	position: absolute;
+    font-size: 25px;
+    font-weight: 100
+}
+.testimonial .card{
+	max-width: 450px;
+	max-height: 550px;
+	margin: 20px 20px 20px 10px;
+}
+.testimonial .icon {
+    position: relative;
+    bottom: 11px
+}
+ #about-us-bg .row{
+      position: relative;
+    width: 100%;
+    margin: 0px !important;
+    padding-right: 0px;
+    padding-left:px;
+  }
+
+.testimonial .mt-100 {
+    margin-top: 80px
+}
+
+.testimonial .profile img {
+	margin-bottom: 10px;
+    width:160px;
+    height: 160px;
+    border-radius: 50%
+}
+
+
+
+.testimonial .card-body {
+    position: relative;
+    bottom: 35px
+
+}
+.testimonial-card-text{
+	float: left;
+	margin-left: 0px;
+}
+.testimonial-card-text p{
+	font-size: 14px;
+}
+.testimonial-card-text h6{
+	font-size: 16px;
+}
+.testimonial-card-text span{
+	font-size: 12px;
+}
+/*Testimonial End*/
+.footer-section{
+	float: left;
+  margin: 0px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  background-color:#666666;
+ /* height: 625px;*/
+  width: 100%;
+}
+.footer-section p,li{
+	font-size: 13px;
+}
+.footer-section h4{
+	font-size: 15px;
+	margin-right: 0px!important;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.footer-section .container{
+	margin-top: 100px;
+}
+.footer .container .footer-logo{
+	align-content: center;
+}
+.footer-form input{
+	width: 253px;
+	border-radius: 50px;
+	height: 45px;
+	text-align: center;
+	background-color: #696969;
+}
+.footer-form textarea{
+	text-align: center;
+	border-radius: 20px;
+	margin-top: 10px;
+}
+.footer-form input, textarea {
+	border: none;
+	background-color: #d1d1d1;
+}
+.footer-form form{
+	text-align: center;
+}
+.footer-form img{
+
+}
+ .social-icons i{
+	margin: 0px 10px ;
+}
+.copyright{
+	margin-top: 18px;
+	padding-top: 10px;
+	height: 40px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	background-color: #bd0f0f;
+}
+/*Departments*/
+
+
+.departments{
+	float: left;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../assets/images/web images/Department-Bg.png') no-repeat 0, 0;
+  height: 950px;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.departments:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.6;
+  background-color: #000;
+}
+.departments .row {
+	margin-top: 200px;
+	margin-bottom: 100px !important;
+}
+.departments h1{
+	margin: 0px 0px 710px 0px;
+  color:#fff;
+  z-index:5;
+}
+.departments h1:after {
+    text-align: center;
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 80%; /* Change this to whatever width you want. */
+    padding-top: 0px; /* This creates some space between the element and the border. */
+    border-bottom: 6px solid red; /* This creates the border. Replace black with whatever color you want. */
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.departments .row{
+margin-top: 200px;
+margin-bottom: 100px;
+position: absolute;
+  z-index:5;
+}
+.departments .Container{
+  text-align: center;
+  width: 650px;
+  margin-left:25px;
+  border-radius: 20px;
+}
+ .departments .content-text-box{
+ 	background-color: #fff;
+ 	text-align: center;
+  width: 500px;
+  height: 600px;
+border-radius: 20px;
+ }
+.Content{
+    height: 500px;
+    color: white;
+    overflow-y: auto;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.Content-text h3{
+	font-weight: bold;
+	color: black;
+	margin-top: 30px;
+	float: left;
+	font-size: 20px;
+	margin-left: 30px;
+}
+.Content-text h3:after {
+    text-align: center;
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 80%; /* Change this to whatever width you want. */
+    padding-top: 0px; /* This creates some space between the element and the border. */
+    border-bottom: 6px solid #c20303; /* This creates the border. Replace black with whatever color you want. */
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.Content-text .row{
+	margin-top: 80px;
+	margin-left: 35px;
+	text-align: center;
+	align-content: center;
+	width: 700px;
+}
+.department-content-text{
+	font-size: 13px;
+	margin-left: 20px;
+	color: black;
+  
+}
+.Flipped{
+
+opacity: 0.9;
+background-color: #bd0f0f;
+direction: rtl;
+padding-top: 40px;
+}
+.Content ul li{
+	font-weight: lighter;
+	opacity: 1.5;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+      
+/* Designing for scroll-bar */
+::-webkit-scrollbar {
+width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background:#F57B7B;
+border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background:#fff;
+color:red;
+border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #fff;
+}
+.gallery-photos img{
+	margin: 10px;
+}
+.gallery-photos .row{
+	margin-bottom: 5px;
+}
+.album ul li{
+	color: #666666;
+	font-size: 40px;
+	margin-top: 10px;
+}
+.album ul li:hover{
+	color: #C20303;
+	background-color: #666666;
+	height: 60px ;
+	border-top-right-radius:20px ;
+	border-bottom-right-radius: 20px;
+}

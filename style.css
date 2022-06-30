@@ -1,0 +1,24 @@
+.logo
+{
+    margin-left:40px ;
+ width:250px;
+}
+ .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+ }
+ .Heading{
+    color:#000080;
+     font-size: 55px; 
+     font-family: Times New roman; 
+     font-weight:bold;
+ }
+ .subHeading{
+    font-family: Times New roman;
+     color:#c20303; 
+     font-size: 50px;
+      margin-top:-30px; 
+      margin-left: 80px;
+       letter-spacing: 5px;
+ }

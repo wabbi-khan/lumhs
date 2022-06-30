@@ -1,0 +1,261 @@
+
+@media only screen  and ( max-width: 768px){
+.header-logo{
+  width: 100% !important;
+  margin-bottom: 0px !important;
+  margin-left: -7px !important;
+  margin-right: 83px !important;
+}
+
+.header-logo span{
+    font-size: 12px !important;
+  }
+
+#navbarSupportedContent ul li a{
+  margin-left: 0px !important;
+ }
+  #navbarSupportedContent{
+  margin-top: 0px !important;
+  height: 100%;
+  text-align: center !important;
+    background-color: #bd0f0f;
+ }
+ .navbar-nav{
+  margin-left: 0px;
+}
+ .navbar img{
+  height: 80px;
+  margin-left: 0px !important;
+  margin-left: 128px !important;
+  text-align: center;
+  margin-bottom: 1px;
+}
+.header-logo img{
+  margin-right: 35px !important;
+}
+.header-logo span{
+  margin-left: 80px;
+}
+.carousel-caption form{
+  margin-left: 0px !important;
+}
+/*.search-field{
+    width: 20px !important;
+    margin-bottom: 8px;
+    margin-left: 50px;
+    width: 255px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+ }*/
+ .search-button{
+  margin-left: 86px !important;
+ }
+.carousel-caption form input{
+  margin: 0px !important;
+  width:50px !important;
+  padding: 0px !important;
+ 
+}
+.carousel-caption .form-box{
+  justify-content: unset;
+   margin-right: 300px !important;
+  padding: 20px 0px 20px 30px !important;
+}
+  .last-service{
+    margin-bottom: -80px;
+  }
+  .our-webcoderskull{
+    height: unset;
+  }
+ .row-first{
+  margin-bottom: -30px;
+ }
+  #video-portion {margin-top: 50px;}
+  .news-events h1:after {
+width: 50%;
+}
+.news-content-area  {
+margin-left: -35px;
+width: 100% !important;
+}
+.news-event-content .news-content-inner{
+  background-color:unset;
+}
+.news-content-area .news-content-inner img{
+width: 410px !important;
+}
+.news-img img {
+/*  width: 200% !important;
+ padding-right: 24px !important;
+    padding-left: 4px !important;*/
+}
+  .testimonial h1:after{
+    width: 60% !important;
+  }
+ 
+  .heading h2:after{
+    width: 30%;
+  }
+
+.about-us-section h1:after {
+width: 100px;  
+}
+
+  .testimonial .profile img{
+    width: 100px !important;
+    height: 100px;
+  }
+  .testimonial-card-text img{
+    height: 20px;
+  }
+  .testimonial h1{
+  margin-top: -1235px;
+  }
+   .testimonial .card{
+      width: 280px;
+    height: 335px;
+
+  }
+  .testimonial h6{
+    margin-top: 16px !important;
+  }
+  .testimonial-card-text {
+    margin-left: 0px;
+  }
+  .testimonial-card-text span
+  {
+    margin-top: 0px !important;
+  }
+  .about-us-section-content{
+    margin-top: 100px;
+  }
+  .about-content{
+    text-align: center;
+    margin-right: 20px;
+  }
+  .liner{
+    margin: 0px !important;
+    width: 100%;
+  }
+.contact h4{
+  margin-left: 0px !important;
+  margin-bottom: 10px !important;
+}
+
+  .f-btn{
+    margin: 0px !important;
+  }
+  .footer-logo img{
+
+    margin: 0px !important;
+    margin-bottom: 20px !important;
+  }
+  .copyright{
+    height: 60px;
+  }
+  #liner p{
+    font-size: 13px;
+  }
+  .info{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .footer-section{
+    text-align: center !important;
+  }
+  .footer-section h4{
+    margin-bottom: 6px;
+    margin-top: 20px;
+  }
+  .testimonial{
+    height: 1850px;
+    margin-top: -450px;
+  }
+  .container-fluid1{
+    margin-top: 10px;
+  }
+  .msg{
+    margin-top: 20px !important;
+  }
+  .news-content-area-video{
+    margin-top: 150px;
+    margin-left: 0px !important;
+    margin-right: 150px !important;
+  }
+  .news-content-area-video video{
+    width: 400px;
+    margin-right: 50px !important;
+  }
+
+  .about-us-section h1{
+    color: #666666;
+    margin-top: -10px;
+    margin-bottom: -70px;
+}
+.about-us-right{
+ margin-left: 10px !important;
+}
+
+.gallery-section{
+  margin-top: 420px !important;
+    height: 550px;
+    margin-top: 260px ;
+}
+.gallery-section h1{
+  margin-top: 30px !important;
+}
+.odd{
+  margin-top: 50px;
+}
+.home-content{
+  height: 450px;
+ }
+ .items img{
+    width: 50px;
+    height: 50px;
+}
+.items span{
+    font-size: 10px;
+    white-space: normal;
+}
+
+ 
+ .departments .Flipped {
+  margin-left: 400px;
+ }
+ 
+ .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  margin-left: -100px;
+ }
+
+ h1{
+  font-size: 25px !important;
+ }
+}
+@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 915px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+
+
+
+
+
+
