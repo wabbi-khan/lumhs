@@ -24,4 +24,40 @@
       margin-left: 80px;
        letter-spacing: 5px;
  }
+
+ /* side navbar */
  
+ #mySidenav a {
+   position: fixed;
+   /* Position them relative to the browser window */
+   left: -80px;
+   /* Position them outside of the screen */
+   transition: 0.3s;
+   /* Add transition on hover */
+   padding: 15px;
+   /* 15px padding */
+   width: 135px;
+   height: 55px;
+   /* Set a specific width */
+   text-decoration: none;
+   /* Remove underline */
+   font-size: 20px;
+   /* Increase font size */
+   color: white;
+   /* White text color */
+   border-radius: 0 25px 25px 0;
+   z-index: 100;
+   padding: 10px;
+   /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+   left: 0;
+   /* On mouse-over, make the elements appear as they should */
+   width: 40%;
+   height: 90%;
+   background-image: url('assets/images/certificate.jpg');
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   color: #638eff00;
+}
