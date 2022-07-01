@@ -61,3 +61,15 @@
    background-repeat: no-repeat;
    color: #638eff00;
 }
+#about {
+   top: 20px;
+   background-color: #BD0F0F;
+}
+
+#about img {
+   margin-left: 10px;
+}
+
+/* sidenavbar end */
+
+/* about section start */
