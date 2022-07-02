@@ -48,6 +48,12 @@
     
         
     }
+    .about-us-section-content img{
+display: none;
+    }
+
+
+    
 }
 /* medai at 375 */
 @media screen and(max-width:375px){
