@@ -139,8 +139,8 @@
    /* float: left; */
 
    padding: 50px 50px;
-   margin-top: auto;
-   margin-bottom: auto;
+   /* margin-top: auto; */
+   /* margin-bottom: auto; */
    display: flex;
    flex-wrap: wrap;
    text-align: center;
