@@ -186,18 +186,28 @@
  /* Our Services*/
  .Services {
    text-align: center;
+   align-items: center;
+   margin: auto;
    margin-top: 1px;
    margin-bottom: 0px;
 }
 
-.Services-content {
-   margin-top: 50px;
-   height: 600px;
-}
 
-.Services h1 {
-   color: #000000;
-   margin: 100px 0px 70px 0px;
+.card-row{
+   display: flex;
+   
+   flex-wrap: wrap;
+
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+.card-main-body{
+   border: 1px solid black;
+   padding: 100px 100px;
+   border-radius: 5px;
+   margin: 10px 10px;
+   border-radius: 20px;
 }
 
 .Services h1:after {
@@ -215,7 +225,6 @@
    /* This creates the border. Replace black with whatever color you want. */
    border-radius: 3px;
 }
-
 
 
 
