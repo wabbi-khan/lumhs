@@ -954,7 +954,7 @@ textarea {
     width: 800px;
     height: 600px;
     border-radius: 20px;
-    margin-left: 12rem;
+    margin-left: 3rem !important ;
 }
 
 .Content {
