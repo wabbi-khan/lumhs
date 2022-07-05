@@ -881,17 +881,17 @@ textarea {
 /*Departments*/
 
 .departments {
-    float: left;
-    margin: 0px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../assets/images/web images/Department-Bg.png') no-repeat 0, 0;
+    background-image: url('../assets/images/web images/Department-Bg.png');
+    width: 100% !important;
     height: 950px;
     background-attachment: fixed;
-    width: 100%;
     position: relative;
     margin-bottom: 80px;
+    background-size: cover;
 }
 
 .departments:after {
@@ -951,9 +951,10 @@ textarea {
 .departments .content-text-box {
     background-color: #fff;
     text-align: center;
-    width: 700px;
+    width: 800px;
     height: 600px;
     border-radius: 20px;
+    margin-left: 12rem;
 }
 
 .Content {
@@ -1003,6 +1004,7 @@ textarea {
     font-size: 13px;
     margin-left: 20px;
     color: black;
+    text-align: justify;
 }
 
 .Flipped {
@@ -1010,12 +1012,13 @@ textarea {
     background-color: #bd0f0f;
     direction: rtl;
     padding-top: 40px;
+    border-radius: 20px;
 }
 
 .Content ul li {
     font-weight: lighter;
     opacity: 1.5;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom: 10px;
     font-size: 15px;
 }
@@ -1051,28 +1054,9 @@ textarea {
     background: #fff;
 }
 
-.gallery-photos img {
-    margin: 10px;
-}
 
-.gallery-photos .row {
-    margin-bottom: 5px;
-}
 
-.album ul li {
-    color: #666666;
-    font-size: 40px;
-    margin-top: 10px;   
-}
-
-.album ul li:hover {
-    color: #C20303;
-    background-color: #666666;
-    height: 60px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
+/* Department section end */
 
 
 
