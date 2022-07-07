@@ -9,7 +9,7 @@
     }
     
     .Heading{
-        margin-top: 0rem;
+        margin-top: -1rem;
         font-size: 40px ;
         text-align: center;
         justify-content: center;
@@ -19,8 +19,12 @@
         font-size: 35px;
         text-align: center;
         justify-content: center;
-        margin-right: 6rem;
+        margin-right: 2rem;
     }
+    .header-icons{
+        display: none;
+    
+     }
    
 }
 
@@ -50,7 +54,7 @@
     }
     .about-us-section-content img{
 display: none;
-    }
+    
 
 
     
