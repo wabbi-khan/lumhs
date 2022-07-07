@@ -68,7 +68,8 @@
      }
      .about-us-section-content img{
 
-        width: 26rem !important;
+        width: 22rem !important;
+        margin-left: -1rem !important;
      }
      .about-content {
        text-align: justify;
@@ -93,6 +94,9 @@
     }
     .mapsh{
       width: 92%;
+    }
+    .fc{
+        margin-left: 0rem !important;
     }
     
 }
