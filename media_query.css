@@ -40,8 +40,8 @@
     }
     
     .Heading{
-        margin-top: -1rem;
-        font-size: 22px ;
+        margin-top: -2rem;
+        font-size: 20px ;
         
 
     }
@@ -75,7 +75,7 @@
     
 }
 /* media at 375 */
-@media screen and  (min-width:0px) and (max-width:377px){
+@media screen and  (min-width:321px) and (max-width:382px){
     .header{
         display: flex;
         flex-direction: column;
@@ -137,6 +137,9 @@
     }
     .news-card-content p{
         width: 100% !important;
+    }
+    .mapsh{
+      width: 92%;
     }
     
 }
