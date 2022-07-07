@@ -86,7 +86,7 @@
     }
     
     .Heading{
-        margin-top: -1rem;
+        margin-top: -3rem;
     font-size: 18px;
         
 
@@ -112,7 +112,9 @@
      }
      .about-us-section-content img{
 
-        width: 23rem !important;
+        width: 20rem !important;
+    margin-left: 0rem;
+    margin-bottom: 1rem;
      }
      .about-content {
        text-align: justify;
@@ -120,7 +122,22 @@
      }
     .departments{
         margin-top: 136rem !important;
+        display: none;
     } 
+
+    .news-events h1 {
+        margin-top: 133rem !important;
+
+    }
+    .news-card-main-body{
+        width: 100%;
+    }
+    .news-card-main-body img{
+        width: 100% !important ;
+    }
+    .news-card-content p{
+        width: 100% !important;
+    }
     
 }
 
