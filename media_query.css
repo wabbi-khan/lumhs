@@ -1,4 +1,4 @@
-@media only screen and (min-width: 427px )and (max-width:768px){
+@media only screen and (min-width: 576px )and (max-width:768px){
     .header{
         display: flex;
         flex-direction: column;
@@ -29,7 +29,7 @@
 }
 
 /* media at 425 (large mobile screen) */ 
-@media screen and  (min-width:382px) and (max-width:427px){
+@media screen and  (min-width:382px) and (max-width:576px){
     .header{
         display: flex;
         flex-direction: column;
@@ -40,8 +40,10 @@
     }
     
     .Heading{
-        margin-top: -2rem;
-        font-size: 20px ;
+        margin-top: -3rem;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
         
 
     }
@@ -61,7 +63,7 @@
         padding-bottom: 32rem;
      }
      .about-us-section h1{
-        margin-top: -1rem;
+        margin-top: 1rem;
         margin-bottom: -2rem;
      }
      .about-us-section-content img{
@@ -71,7 +73,27 @@
      .about-content {
        text-align: justify;
      }
-    
+     .departments{
+        margin-top: 136rem !important;
+        display: none;
+    } 
+
+    .news-events h1 {
+        margin-top: 133rem !important;
+
+    }
+    .news-card-main-body{
+        width: 100%;
+    }
+    .news-card-main-body img{
+        width: 100% !important ;
+    }
+    .news-card-content p{
+        width: 100% !important;
+    }
+    .mapsh{
+      width: 92%;
+    }
     
 }
 /* media at 375 */
