@@ -109,6 +109,15 @@
     .copyright{
         font-size: 12px;
     }
+    .horizontal-scrollable {
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .horizontal-scrollable {
+        display: inline-block;
+        float: none;
+      }
     
 }
 /* media at 375 */
@@ -188,5 +197,14 @@
     .copyright{
         font-size: 12px;
     }
+    .horizontal-scrollable {
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .horizontal-scrollable {
+        display: inline-block;
+        float: none;
+      }
 }
 
