@@ -34,6 +34,10 @@
     .body{
         overflow-x: hidden;
     }
+    .header img{
+        
+        width: 35%;
+    }
     .header{
         display: flex;
         flex-direction: column;
@@ -45,7 +49,7 @@
     
     .Heading{
         margin-top: -3rem;
-        font-size: 20px;
+        font-size: 21px;
         margin-left: auto;
         margin-right: auto;
         
@@ -53,7 +57,7 @@
     }
     .subHeading{
         padding-top: 12px !important;
-        font-size: 17px;
+        font-size: 15px;
         margin-left: 20px;
     
         
@@ -109,8 +113,9 @@
 }
 /* media at 375 */
 @media screen and  (min-width:321px) and (max-width:382px){
-    .body{
-        overflow: none;
+    .header img{
+        
+        width: 35%;
     }
     .header{
         display: flex;
