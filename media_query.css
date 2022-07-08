@@ -1,4 +1,5 @@
 @media only screen and (min-width: 576px )and (max-width:768px){
+ 
     .header{
         display: flex;
         flex-direction: column;
@@ -30,6 +31,9 @@
 
 /* media at 425 (large mobile screen) */ 
 @media screen and  (min-width:382px) and (max-width:576px){
+    .body{
+        overflow-x: hidden;
+    }
     .header{
         display: flex;
         flex-direction: column;
@@ -98,10 +102,16 @@
     .fc{
         margin-left: 0rem !important;
     }
+    .copyright{
+        font-size: 12px;
+    }
     
 }
 /* media at 375 */
 @media screen and  (min-width:321px) and (max-width:382px){
+    .body{
+        overflow: none;
+    }
     .header{
         display: flex;
         flex-direction: column;
@@ -167,6 +177,11 @@
     .mapsh{
       width: 92%;
     }
-    
+    .fc{
+        margin-left: 0rem !important;
+    }
+    .copyright{
+        font-size: 12px;
+    }
 }
 
