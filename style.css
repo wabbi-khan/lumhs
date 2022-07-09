@@ -595,7 +595,7 @@ nav {
 }
 
 .news-card-main-body{
-    border: 3px solid rgb(0, 0, 0);
+    border:10px solid #bd0f0f;
     padding: 10px 10px ;
     border-radius: 5px;
     margin: 10px 10px;
