@@ -1,4 +1,4 @@
-@media only screen and (min-width: 576px )and (max-width:769px){
+@media only screen and (min-width: 576px )and (max-width:768px){
  
     .header{
         display: flex;
@@ -26,6 +26,18 @@
         display: none;
     
      }
+     .about-us-section{
+        padding-bottom: 32rem;
+     }
+     .departments{
+        margin-top: 136rem !important;
+        display: none;
+    } 
+
+    .news-events h1 {
+        margin-top: 133rem !important;
+
+    }
      .footer-section img{
         display: block;
   margin-left: auto;
@@ -186,7 +198,7 @@
      }
      .about-content {
        text-align: justify;
-       width: 23rem;
+       width: 21rem;
      }
     .departments{
         margin-top: 136rem !important;
