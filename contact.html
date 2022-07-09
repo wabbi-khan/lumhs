@@ -26,58 +26,60 @@
     <link rel="stylesheet" href="./media_query.css" />
 </head>
 <style>
-    .news {
-        background-image: url("assets/services/Kitchen image 3.jpg");
-        height: 400px;
-        margin-bottom: 30px;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+     textarea::-webkit-input-placeholder {
+padding-top:60px;
+}
 
-    .services-text {
-        margin: 80px 150px 80px 150px;
-        text-align: justify;
-    }
+textarea:-moz-placeholder { /* Firefox 18- */
+padding-top:60px;  
+}
 
-    .innerIcon {
-        display: none;
-    }
+textarea::-moz-placeholder {  /* Firefox 19+ */
+padding-top:60px;  
+}
 
-    .department-title {
-        text-align: center;
-        margin-top: 80px;
-        color: #666666;
-        font-weight: bold;
-    }
+textarea:-ms-input-placeholder {
+padding-top:60px;  
+}
 
-    .department-title:after {
-        content: "";
-        /* This is necessary for the pseudo element to work. */
-        display: block;
-        /* This will put the pseudo element on its own line. */
-        margin: 0 auto;
-        /* This will center the border. */
-        width: 20%;
-        /* Change this to whatever width you want. */
-        padding-top: 10px;
-        /* This creates some space between the element and the border. */
-        border-bottom: 6px solid #c20303;
-        /* This creates the border. Replace black with whatever color you want. */
-        border-radius: 5px;
-        text-align: center;
-    }
-    .opd-shedule{
-  text-align: center;
-      margin-top:30px; 
-      color:#000; 
-      font-weight:bold;
-      margin-bottom:50px;
-    }
-    .opd-shedule:after {
+textarea::placeholder {
+padding-top:60px;  
+}
+.contactUsPage{
+ background-image:url('assets/images/imger/contact.png');
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-title:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
     margin: 0 auto; /* This will center the border. */
-    width: 13%; /* Change this to whatever width you want. */
+    width: 10%; /* Change this to whatever width you want. */
+    padding-top: 10px; /* This creates some space between the element and the border. */
+    border-bottom: 6px solid #C20303; /* This creates the border. Replace black with whatever color you want. */
+    border-radius: 5px;
+    text-align: center;
+}
+.services-text{  
+margin: 80px 150px 80px 150px;
+text-align: justify;
+}
+    .innerIcon{
+      display: none;
+    }
+ .department-title{
+  text-align: center;
+      margin-top:80px; 
+      color:#666666; 
+      font-weight:bold;
+    }
+    .department-title:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 10%; /* Change this to whatever width you want. */
     padding-top: 10px; /* This creates some space between the element and the border. */
     border-bottom: 6px solid #C20303; /* This creates the border. Replace black with whatever color you want. */
     border-radius: 5px;
@@ -207,7 +209,6 @@
         </div>
 
         <!-- navbar -->
-
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #bd0f0f !important ; margin-top: 0rem !important;">
             <div class="container-fluid d-flex justify-content-center">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -294,265 +295,42 @@
             </a>
         </div>
 
-        <section>
-            <div class="news"></div>
-            <h2 class="department-title">Out-Patient Services </h2>
-            <div class="services-text">
-                <p>
-                    The Liaquat University Hospital, provides general out-patient services and is designed for the
-                    maximum comfort and privacy of patients in the course of consultation with advanced equipment and
-                    highly trained staff. Staff members at out-patient department are well trained and experienced in
-                    the service, we provide.<br>
-                    Number of Post-Graduates has also been increased to accommodate patient need. All of the care that
-                    you need before, during, and after the procedure, surgery, or test may be conveniently provided in
-                    one place.
-                </p>
-                <p>
-                <h4>Visiting Hours:</h4>
-                <p>Out-patient services are available between 8am – 8pm.</p>
-                <div class="row">
-                    <div class="col-2">
-
-                    </div>
-                    <div class="col-4  text-right" style="font-weight:bold;margin-left:-10px">
-                        Morning OPD:
-                    </div>
-                    <div class="col-4 text-left">
-                        08:00am-02:00 pm
-                    </div>
-                    <div class="col-2">
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-
-                    </div>
-                    <div class="col-4  text-right" style="font-weight:bold;margin-left:-10px">
-                        Evening OPD:
-                    </div>
-                    <div class="col-4 text-left">
-                        02:00pm–08:00 pm
-                    </div>
-                    <div class="col-2">
-
-                    </div>
-                </div>
-                <!--    <p>-->
-                <!--    <span style='text-align:left; float:left;'>Morning OPD:</span><span style='float:right'>08:00am-02:00 pm</span>-->
-                <!--</p>-->
-                <!--<br>-->
-                <!-- <p>-->
-                <!--    <span style='text-align:left; float:left;'>Evening OPD:</span><span style='float:right'>02:00pm–08:00 pm</span>-->
-                <!--</p>-->
-                </p>
-            </div>
-            <h3 class="opd-shedule">OPD Schedule </h3>
-            <table class="table table-striped horizontal-scrollable container" style="">
-                <thead class="text-center" style="background-color:#c20303;color:#fff">
-                    <tr>
-                        <th style="width:25%;">S#</th>
-                        <th style="width:25%;">OPD NO:</th>
-                        <th style="width:25%;">OPD NAME</th>
-                        <th style="width:25%;">DAYS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1 </td>
-                        <td>2 </td>
-                        <td class="text">HIV TFHC </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>2 </td>
-                        <td>3 </td>
-                        <td class="text">DENTAL </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>3 </td>
-                        <td>3-A </td>
-                        <td class="text">DENTAL (Diagnosis) </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>4 </td>
-                        <td>3-B </td>
-                        <td class="text">DENTAL (Oral Surgery) </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>5 </td>
-                        <td>3-C </td>
-                        <td class="text">DENTAL (DENTISTRY) </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-
-                        <td>6 </td>
-                        <td>3-D </td>
-                        <td class="text">DENTAL (Orthodontic) </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>7 </td>
-                        <td>3-D </td>
-                        <td class="text">DENTAL (Prosthodontics) </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-
-                        <td>8 </td>
-                        <td>4 </td>
-                        <td class="text">SURGICAL </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>9 </td>
-                        <td>4-A </td>
-                        <td class="text">PAEDS SURGERY </td>
-                        <td class="text">Tuesday+Friday</td>
-                    </tr>
-                    <tr>
-                        <td>10 </td>
-                        <td>5 </td>
-                        <td class="text">MEDICAL </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>11 </td>
-                        <td>6 </td>
-                        <td class="text">PAEDS </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>12 </td>
-                        <td>7 </td>
-                        <td class="text">ENT </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-
-                        <td>13 </td>
-                        <td>7-A </td>
-                        <td class="text">X-Ray </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>14 </td>
-                        <td>8 </td>
-                        <td class="text">Pathology Lab </td>
-                        <td>Daily</td>
-
-                    </tr>
-                    <tr>
-                        <td>15 </td>
-                        <td>9 </td>
-                        <td class="text">Store </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>16 </td>
-                        <td>12 </td>
-                        <td class="text">Chest </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>17 </td>
-                        <td>13 </td>
-                        <td class="text">GYNAECOLOGY </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-
-                        <td>18 </td>
-                        <td>14 </td>
-                        <td class="text">ORTHOPEDIC </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>19 </td>
-                        <td>15 </td>
-                        <td class="text">PHYSIOTHERAPY</td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>20 </td>
-                        <td>17 </td>
-                        <td class="text">SKIN </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>21 </td>
-                        <td>18 </td>
-                        <td class="text">UROLOGY/NEPHROLOGY </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
-                        <td>19 </td>
-                        <td class="text">PSYCHIATARY </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>23 </td>
-                        <td>22 </td>
-                        <td class="text">PLASTIC SURGERY </td>
-                        <td>Monday+Thursday</td>
-                    </tr>
-                    <tr>
-                        <td>24 </td>
-                        <td>23 </td>
-                        <td class="text">NEURO SURGERY </td>
-                        <td> Tuesday+Saturday</td>
-                    </tr>
-                    <tr>
-                        <td>25 </td>
-                        <td>23-A </td>
-                        <td class="text">NEURO MEDICINE</td>
-                        <td> Wednesday+Friday</td>
-                    </tr>
-                    <tr>
-                        <td>26 </td>
-                        <td>24 </td>
-                        <td class="text">DIABETIC </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>27 </td>
-                        <td>25 </td>
-                        <td class="text">HEPATITIS </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-                        <td>28 </td>
-                        <td>26 </td>
-                        <td class="text">GASTRO </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-
-                        <td>29 </td>
-                        <td>26-A </td>
-                        <td class="text">PCR Lab: </td>
-                        <td>Daily</td>
-                    </tr>
-                    <tr>
-
-                        <td>30 </td>
-                        <td>40 </td>
-                        <td class="text">ONCOLOGY </td>
-                        <td>Daily</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
        </div>
     </div>
     <!-- header Start -->
+    <section class="contactUsPage" style='margin-bottom:10px'> 
+        <h2 class="contact-title text-center"  style="color:#fff; font-weight: bold; padding-top:30px">Contact Us </h2>
+        <div class="row" style="margin:30px 100px">
+         <div class="col-xs-12 col-md-6">
+            <input type="text" placeholder="Name" name="" style=" height: 50px; width:100%;border-radius: 10px; border:none;">
+         </div>
+          <div class=" col-xs-12 col-md-6">
+            <input type="text" placeholder="Username" name="" style=" height: 50px; width:100%;border-radius: 10px; border:none;">
+         </div>
+         <div class="col-12">
+           <textarea  style="text-align:center; width: 100%; height:150px; border-radius:10px; margin-top: 20px; " placeholder='Enter Text here'></textarea>
+         </div>
+          
+        </div>
+      </section>
+      <section style="margin:0px">
+        <div class="row" style="text-align:center;">
+            <div class="col-xs-12 col-sm-6  col-md-6 col-lg-6 " style="margin:30px 0px">
+                <h3 style="margin-bottom:30px">LUH HYDERABAD</h3>
+                <iframe class="mapsh"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.137980039943!2d68.36496561433165!3d25.400191529669513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c70c2fdf1d4b7%3A0x8d7ba394d3a530a7!2sLiaquat%20University%20Hospital%2C%20Hyderabad!5e0!3m2!1sen!2s!4v1646901696220!5m2!1sen!2s"
+                    width="650" height="220" style="border:0;" allowfullscreen="" loading="lazy">
 
-    <div class="about"></div>
+                </iframe>
+            </div>
+            <div class="col-xs-12 col-sm-6  col-md-6 col-lg-6" style="margin:30px 0px">
+                <h3 style="margin-bottom:30px">LUH JAMSHORO</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.2328995899143!2d68.26913671433235!3d25.430476028438694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c791237c0330f%3A0xc8f6d04d460201fc!2sLiaquat%20University%20of%20Medical%20and%20Health%20Sciences!5e0!3m2!1sen!2s!4v1646902518730!5m2!1sen!2s"
+                    width="650" class="mapsh" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
     <section>
