@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>LIAQUAT UNIVERSITY HOSPITAL</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/web images/favicon.png"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.2.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.2.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://use.fontawesome.com/486dfc994b.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./media_query.css" />
+  </head>
+  <style>
+    .news {
+      background-image: url("assets/services/Laboratary Image.jpg");
+      height: 400px;
+      margin-bottom: 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .services-text {
+      margin: 80px 150px 80px 150px;
+      text-align: justify;
+    }
+
+    .innerIcon {
+      display: none;
+    }
+
+    .department-title {
+      text-align: center;
+      margin-top: 80px;
+      color: #666666;
+      font-weight: bold;
+    }
+
+    .department-title:after {
+      content: "";
+      /* This is necessary for the pseudo element to work. */
+      display: block;
+      /* This will put the pseudo element on its own line. */
+      margin: 0 auto;
+      /* This will center the border. */
+      width: 30%;
+      /* Change this to whatever width you want. */
+      padding-top: 10px;
+      /* This creates some space between the element and the border. */
+      border-bottom: 6px solid #c20303;
+      /* This creates the border. Replace black with whatever color you want. */
+      border-radius: 5px;
+      text-align: center;
+    }
+    @media only screen and (max-width: 640px) {
+      .horizontal-scrollable {
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .horizontal-scrollable {
+        display: inline-block;
+        float: none;
+      }
+
+      .department-title:after {
+        content: "";
+        /* This is necessary for the pseudo element to work. */
+        display: block;
+        /* This will put the pseudo element on its own line. */
+        margin: 0 auto;
+        /* This will center the border. */
+        width: 50%;
+        /* Change this to whatever width you want. */
+        padding-top: 10px;
+        /* This creates some space between the element and the border. */
+        border-bottom: 6px solid #c20303;
+        /* This creates the border. Replace black with whatever color you want. */
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .department-title {
+        margin-bottom: 30px;
+      }
+
+      .services-text {
+        margin: 10px 10px;
+      }
+
+      .innerIcon {
+        display: block;
+      }
+
+      .news {
+        height: 120px;
+      }
+
+      marquee {
+        margin-left: 0px !important;
+        margin-top: px !important;
+        width: 100%;
+      }
+
+   
+
+      .last-service {
+        margin-bottom: -50px !important;
+      }
+
+      .our-service {
+        margin-top: -174px !important;
+        margin-bottom: 40px !important;
+      }
+
+      .departments {
+        margin-top: 0px !important;
+        height: 800px !important;
+      }
+
+      .departments h1 {
+        margin-top: 30px !important;
+        color: #fff;
+        z-index: 5;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="fluid" style="overflow-x: hidden; overflow-y: hidden">
+      <div class="container">
+        <div class="row header">
+          <div class="col-lg-3 col-md">
+            <a href="index.html">
+              <img
+                class="mx-auto logo d-flex justify-content-center justify-content-sm-center"
+                src="./assets/images/web images/liaquit uni logo.png"
+                alt="LOGO "
+              />
+            </a>
+          </div>
+          <div class="col-lg-9 col-md">
+            <div class="">
+              <span class="iconsHeader header-icons" style="float: right">
+                <a
+                  style="text-decoration: none"
+                  href="https://www.facebook.com/CivilHospitalHyderabad/"
+                  target="_blank"
+                >
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a
+                  style="text-decoration: none"
+                  href="https://youtube.com/channel/UCp17EWWRyp7KVsF7Jk5KivA"
+                  target="_blank"
+                >
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+                <a
+                  style="text-decoration: none"
+                  href="https://twitter.com/HospitalLiaquat"
+                  target="_blank"
+                >
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a
+                  style="text-decoration: none"
+                  href="https://www.instagram.com/tv/CeobMAAlMiN/?igshid=YmMyMTA2M2Y="
+                  target="_blank"
+                >
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <!--    <a href="https://www.facebook.com/CivilHospitalHyderabad/">
+                              <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a> -->
+                <!--  <a href="https://youtube.com/channel/UCp17EWWRyp7KVsF7Jk5KivA">
+                              <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a> -->
+                <!--  <a href="">
+                              <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a> -->
+              </span>
+              <br /><br />
+              <p class="Heading text-sm-center text-md-center mx-auto">
+                LIAQUAT UNIVERSITY HOSPITAL
+              </p>
+              <p class="subHeading text-sm-center text-md-center">
+                HYDERABAD / JAMSHORO
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- navbar -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #bd0f0f !important ; margin-top: 0rem !important;">
+        <div class="container-fluid d-flex justify-content-center">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li style="font-size: 1rem; font-weight:bold;" class="nav-item">
+                        <a class="nav-link" style="color: white ;" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li style="font-size: 1rem; font-weight:bold;" class="nav-item">
+                        <a class="nav-link" style="color: white ;" href="./about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown" style="font-size: 1rem; font-weight:bold;">
+                        <a class="nav-link dropdown-toggle" style="color: white ;" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                           Services
+                        </a>
+                        <ul class="dropdown-menu" style="background-color:#bd0f0f;" aria-labelledby="navbarDropdown">
+                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="opd.html">Out-Patients services</a></li>
+                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="casulity-emergency.html">Casuality & Emergency Services</a></li>
+                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="laboratory.html">Laboratory</a></li>
+                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="Radiology.html">Radiology</a></li>
+                            
+                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="ics.html">Intensive Care Services</a></li>
+                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="kitchen.html">kitchen</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" style="font-size: 1rem; font-weight:bold;">
+                        <a class="nav-link dropdown-toggle" style="color: white ;" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Reports
+                        </a>
+                        <ul class="dropdown-menu" style="background-color:#bd0f0f;" aria-labelledby="navbarDropdown">
+                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="patients.html">Patients</a></li>
+                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="pathology.html">Pathology</a></li>
+                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="radiology-reports.html">Radiology</a></li>
+                            <li>
+                           
+                          
+                        </ul>
+                    </li>
+                    <li style="font-size: 1rem; font-weight:bold;" class="nav-item">
+                        <a class="nav-link " style="color: white ;" href="gallery.html" tabindex="-1" aria-disabled="true">Gallery</a>
+                    </li>
+                    <li class="nav-item" style="font-size: 1rem; font-weight:bold;">
+                        <a class="nav-link " style="color: white ;" href="messages.html" tabindex="-1" aria-disabled="true">Messages</a>
+                    </li>
+                    <li class="nav-item" style="font-size: 1rem; font-weight:bold;">
+                        <a class="nav-link " style="color: white ;" href="news.html" tabindex="-1" aria-disabled="true">News & Events</a>
+                    </li>
+                    <li class="nav-item" style="font-size: 1rem; font-weight:bold;">
+                        <a class="nav-link " style="color: white ;" href="contact.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+                    </li>
+
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+      <!-- navbar end -->
+      <marquee style="margin-top: 0.8rem; margin-bottom: 0"
+        ><i style="color: #c20303" class="fa fa-circle"></i> &nbsp;Protect
+        Yourself Against COVID 19. &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+        <i style="color: #c20303" class="fa fa-circle"></i> &nbsp; Wear a Mask.
+        &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+        <i style="color: #c20303" class="fa fa-circle"></i> &nbsp; Wash Your
+        Hands Frequently &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+        &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+        <i style="color: #c20303" class="fa fa-circle"></i> &nbsp; Dont Touch
+        Eyes, Nose, or Mouth with unwashed hands.
+      </marquee>
+
+      <!-- mysidenav bar-->
+      <div id="mySidenav" class="sidenav">
+        <a href="#" class="title" id="about"
+          >SHCC <title>Sindh health care</title
+          ><img src="assets/SSarYX.svg" height="40px;" />
+        </a>
+      </div>
+      <section> 
+        <div class="news"></div>
+        <h2 class="department-title" >Department of Cardiology</h2>
+        <div class="services-text">
+          <p>Department of Cardiac Surgery is renowned for providing advanced care to pediatrics and adults suffering from congenital and acquired heart diseases. Our highly specialized surgeons and their teams, work diligently to perform elective and life-saving cardiac surgery to give our patients a better quality of life.
+  Our services range from diagnostic, corrective to life-saving in nature. We have fully-equipped operation theatres as well as efficiently managed ICU units. We were also the first private sector hospital to employ the sophisticated technology of an intra-aortic balloon pump in our surgeries.
+  Our department works closely with the departments of Cardiology, Radiology, Nephrology and Laboratory services to provide holistic care to the patients.
+  At Department of Cardiac Surgery, we provide treatments based on evidence-based practice. Our surgeons, physicians, assistants, nurses and staff work together to deliver innovative care, aiming at improved outcomes and quality of life to our patients.
+  
+  </p>
+        </div>
+      </section>
+     
+      <section>
+    <!-- footer -->
+    <section>
+      <footer class="footer-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md">
+              <img
+                style="margin-bottom: 30px"
+                width="210"
+                height="210"
+                src="assets/images/web images/lpage.png"
+              />
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <p
+                class="fc"
+                style="
+                  margin-top: 50px;
+                  line-height: 1.8;
+                  text-align: justify-all;
+                  margin-right: 30px;
+                  margin-left: -50px;
+                "
+              >
+                Liaquat University Hospital (LUH) in Sindh is a multispeciality
+                hospital providing complete medical as well as surgical care.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md">
+              <h4
+                style="margin-top: 30px; margin-bottom: 10px; font-size: 20px"
+              >
+                Infromation
+              </h4>
+              <ul class="ql">
+                <li>
+                  <a
+                    style="color: white; text-decoration: none"
+                    href="developmental-projects.html"
+                    >Developmental Projects</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: white; text-decoration: none"
+                    style="color: white; text-decoration: none"
+                    href="public-private-partnership"
+                    >Public – Private Partnership / Collaborators
+                  </a>
+                </li>
+                <li>
+                  <a
+                    style="color: white; text-decoration: none"
+                    href="post-graduation.html"
+                  >
+                    Teaching & Training</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: white; text-decoration: none"
+                    href="faqs.html"
+                  >
+                    FAQs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: white; text-decoration: none"
+                    href="announcements.html"
+                    >Announcements</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: white; text-decoration: none"
+                    href="downloads.html"
+                    >Downloads</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md">
+              <h4
+                style="margin-top: 30px; margin-bottom: 10px; font-size: 20px"
+              >
+                Quick Links
+              </h4>
+              <ul class="ql">
+                <!-- <li>
+                 Dicount offers
+               </li> -->
+                <li>
+                  <a
+                    style="color: white; text-decoration: none"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a style="color: white; text-decoration: none" href="opd.html"
+                    >Reports-2021</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: white; text-decoration: none"
+                    href="contact.html"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: white; text-decoration: none"
+                    href="gallery.html"
+                    >Gallery</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: white; text-decoration: none"
+                    href="news.html"
+                    >News & Events</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: white; text-decoration: none"
+                    href="services.html"
+                    >Services</a
+                  >
+                </li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row social-icons" style="text-align: center; margin: 20px">
+          <div class="col-12 ql">
+            <a
+              style="color: white; text-decoration: none"
+              href="https://www.facebook.com/CivilHospitalHyderabad/"
+              target="_blank"
+            >
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a
+              style="color: white; text-decoration: none"
+              href="https://youtube.com/channel/UCp17EWWRyp7KVsF7Jk5KivA"
+              target="_blank"
+            >
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a
+              style="color: white; text-decoration: none"
+              href="https://twitter.com/HospitalLiaquat"
+              target="_blank"
+            >
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a
+              style="color: white; text-decoration: none"
+              href="https://www.instagram.com/lums_university_hospital"
+              target="_blank"
+            >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <!--  <i class="fa fa-instagram" aria-hidden="true"></i> -->
+          </div>
+        </div>
+      </footer>
+    </section>
+    <div class="fluid footer-section" style="margin-bottom: 1px">
+      <div class="copyright">
+        <span>© 2022 LUH All Rights Reserved</span>
+      </div>
+    </div>
+  </body>
+</html>
