@@ -88,6 +88,10 @@
         display: none;
     
      }
+     .myimge img{
+        height: auto;
+        background-size: cover;
+     }
      .about-us-section{
         padding-bottom: 32rem;
      }
@@ -150,7 +154,7 @@
       }
     
 }
-/* media at 375 */
+/* media at 375(mobile medium) */
 @media screen and  (min-width:325px) and (max-width:382px){
     .header img{
         
@@ -182,6 +186,10 @@
     .header-icons{
         display: none;
     
+     }
+     .myimge img{
+        height: auto;
+        background-size: cover;
      }
      .about-us-section{
         padding-bottom: 32rem;
