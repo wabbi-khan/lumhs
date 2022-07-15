@@ -1,677 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <title>LIAQUAT UNIVERSITY HOSPITAL</title>
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="assets/images/web images/favicon.png"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.2.0/dist/js/swiffy-slider.min.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.2.0/dist/css/swiffy-slider.min.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
+    <link rel="shortcut icon" type="image/png" href="assets/images/web images/favicon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.2.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.2.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
 
     <script src="https://use.fontawesome.com/486dfc994b.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./media_query.css" />
-  </head>
+</head>
 
-  <script src="https://use.fontawesome.com/486dfc994b.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/style.css">
-  <link rel="stylesheet" type="text/css" href="assets/media-query.css">
+<script src="https://use.fontawesome.com/486dfc994b.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+<link rel="stylesheet" type="text/css" href="assets/media-query.css">
 <!-- amCharts javascript sources -->
 <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
 <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
 <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/patterns.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <script type="text/javascript">
-  AmCharts.makeChart("chartdiv",
-    {
-      "type": "serial",
-      "categoryField": "category",
-      "autoMarginOffset": 40,
-      "marginRight": 60,
-      "marginTop": 60,
-      "startDuration": 0,
-      "fontSize": 13,
-      // "theme": "patterns",
-      "categoryAxis": {
-        "gridPosition": "start"
-      },
-      "trendLines": [],
-      "graphs": [
-        {
-          "balloonText": "Total patient: [[value]]",// "balloonText": "[[title]] of [[category]]:[[value]]",
-          "bulletColor": "red",
-          "bulletSize": 10,
-          "bullet": "round",
-          "id": "",
-          "lineAlpha": 1,
-          "lineColor":"red",
-          "lineThickness": 3,
-          "title": "graph 1",
-          "type": "smoothedLine",
-          "valueField": "column-1"
-        }
-      ],
-      "guides": [],
-      "valueAxes": [
-        {
-          "id": "ValueAxis-1",
-          "title": ""
-        }
-      ],
-      "allLabels": [],
-      "balloon": {},
-      "titles": [],
-      "dataProvider": [
-       {
-          "category": "Jan",
-          "column-1": 151605,
+    AmCharts.makeChart("chartdiv", {
+        "type": "serial",
+        "categoryField": "category",
+        "autoMarginOffset": 40,
+        "marginRight": 60,
+        "marginTop": 60,
+        "startDuration": 0,
+        "fontSize": 13,
+        // "theme": "patterns",
+        "categoryAxis": {
+            "gridPosition": "start"
+        },
+        "trendLines": [],
+        "graphs": [{
+            "balloonText": "Total patient: [[value]]", // "balloonText": "[[title]] of [[category]]:[[value]]",
+            "bulletColor": "red",
+            "bulletSize": 10,
+            "bullet": "round",
+            "id": "",
+            "lineAlpha": 1,
+            "lineColor": "red",
+            "lineThickness": 3,
+            "title": "graph 1",
+            "type": "smoothedLine",
+            "valueField": "column-1"
+        }],
+        "guides": [],
+        "valueAxes": [{
+            "id": "ValueAxis-1",
+            "title": ""
+        }],
+        "allLabels": [],
+        "balloon": {},
+        "titles": [],
+        "dataProvider": [{
+                "category": "Jan",
+                "column-1": 151605,
 
-        },
-        {
-          "category": "Feb",
-          "column-1": 145214
-        },
-        {
-          "category": "Mar",
-          "column-1": 150992
-        },
-        {
-          "category": "Apr ",
-          "column-1": 163875
-        },
-        {
-          "category": "May ",
-          "column-1": 149157
-        },
-        {
-          "category": "Jun ",
-          "column-1": 133167
-        },
-        {
-          "category": "Jul ",
-          "column-1": 133167
-        },
-        {
-          "category": "Aug ",
-          "column-1": 149157
-        },
-        {
-          "category": "Sep ",
-          "column-1": 150992
-        },
+            }, {
+                "category": "Feb",
+                "column-1": 145214
+            }, {
+                "category": "Mar",
+                "column-1": 150992
+            }, {
+                "category": "Apr ",
+                "column-1": 163875
+            }, {
+                "category": "May ",
+                "column-1": 149157
+            }, {
+                "category": "Jun ",
+                "column-1": 133167
+            }, {
+                "category": "Jul ",
+                "column-1": 133167
+            }, {
+                "category": "Aug ",
+                "column-1": 149157
+            }, {
+                "category": "Sep ",
+                "column-1": 150992
+            },
 
-        {
-          "category": "Oct ",
-          "column-1": 162134
+            {
+                "category": "Oct ",
+                "column-1": 162134
+            }, {
+                "category": "Nov",
+                "column-1": 163875
+            }, {
+                'category': 'Dec',
+                "column-1": 145214
+            }
+        ]
+    });
+    AmCharts.makeChart("HEMATOxzcvxcLOGY", {
+        "type": "serial",
+        "categoryField": "category",
+        "autoMarginOffset": 40,
+        "marginRight": 60,
+        "marginTop": 60,
+        "startDuration": 0,
+        "fontSize": 13,
+        // "theme": "patterns",
+        "categoryAxis": {
+            "gridPosition": "start"
         },
-        {
-          "category": "Nov",
-          "column-1": 163875
-        },
-        {
-          'category':'Dec',
-          "column-1":145214
-        }
-      ]
-    }
-  );
-   AmCharts.makeChart("HEMATOxzcvxcLOGY",
-    {
-      "type": "serial",
-      "categoryField": "category",
-      "autoMarginOffset": 40,
-      "marginRight": 60,
-      "marginTop": 60,
-      "startDuration": 0,
-      "fontSize": 13,
-      // "theme": "patterns",
-      "categoryAxis": {
-        "gridPosition": "start"
-      },
-      "trendLines": [],
-      "graphs": [
-        {
-          "balloonText": "Total patient: [[value]]",// "balloonText": "[[title]] of [[category]]:[[value]]",
-          "bulletColor": "red",
-          "bulletSize": 10,
-          "bullet": "round",
-          "id": "",
-          "lineAlpha": 1,
-          "lineColor":"red",
-          "lineThickness": 3,
-          "title": "graph 1",
-          "type": "smoothedLine",
-          "valueField": "column-1"
-        }
-      ],
-      "guides": [],
-      "valueAxes": [
-        {
-          "id": "ValueAxis-1",
-          "title": ""
-        }
-      ],
-      "allLabels": [],
-      "balloon": {},
-      "titles": [],
-      "dataProvider": [
-        {
-          "category": "Jan",
-          "column-1": 35559
-        },
-        {
-          "category": "Feb",
-          "column-1": 39239
-        },
-        {
-          "category": "Mar",
-          "column-1": 43715
-        },
-        {
-          "category": "Apr ",
-          "column-1": 50505
-        },
-        {
-          "category": "May ",
-          "column-1": 48672
-        },
-        {
-          "category": "Jun ",
-          "column-1": 38490
-        },
-        {
-          "category": "Jul ",
-          "column-1": 39672
-        },
-        {
-          "category": "Aug ",
-          "column-1": 35559
-        },
-        {
-          "category": "Sep ",
-          "column-1": 39239
-        },
+        "trendLines": [],
+        "graphs": [{
+            "balloonText": "Total patient: [[value]]", // "balloonText": "[[title]] of [[category]]:[[value]]",
+            "bulletColor": "red",
+            "bulletSize": 10,
+            "bullet": "round",
+            "id": "",
+            "lineAlpha": 1,
+            "lineColor": "red",
+            "lineThickness": 3,
+            "title": "graph 1",
+            "type": "smoothedLine",
+            "valueField": "column-1"
+        }],
+        "guides": [],
+        "valueAxes": [{
+            "id": "ValueAxis-1",
+            "title": ""
+        }],
+        "allLabels": [],
+        "balloon": {},
+        "titles": [],
+        "dataProvider": [{
+                "category": "Jan",
+                "column-1": 35559
+            }, {
+                "category": "Feb",
+                "column-1": 39239
+            }, {
+                "category": "Mar",
+                "column-1": 43715
+            }, {
+                "category": "Apr ",
+                "column-1": 50505
+            }, {
+                "category": "May ",
+                "column-1": 48672
+            }, {
+                "category": "Jun ",
+                "column-1": 38490
+            }, {
+                "category": "Jul ",
+                "column-1": 39672
+            }, {
+                "category": "Aug ",
+                "column-1": 35559
+            }, {
+                "category": "Sep ",
+                "column-1": 39239
+            },
 
-        {
-          "category": "Oct ",
-          "column-1": 43715
+            {
+                "category": "Oct ",
+                "column-1": 43715
+            }, {
+                "category": "Nov",
+                "column-1": 50505
+            }, {
+                'category': 'Dec',
+                "column-1": 48672
+            }
+        ]
+    });
+    AmCharts.makeChart("ELISA & HORMONES", {
+        "type": "serial",
+        "categoryField": "category",
+        "autoMarginOffset": 40,
+        "marginRight": 60,
+        "marginTop": 60,
+        "startDuration": 0,
+        "fontSize": 13,
+        // "theme": "patterns",
+        "categoryAxis": {
+            "gridPosition": "start"
         },
-        {
-          "category": "Nov",
-          "column-1": 50505
-        },
-        {
-          'category':'Dec',
-          "column-1":48672
-        }
-      ]
-    }
-  );
-    AmCharts.makeChart("ELISA & HORMONES",
-    {
-      "type": "serial",
-      "categoryField": "category",
-      "autoMarginOffset": 40,
-      "marginRight": 60,
-      "marginTop": 60,
-      "startDuration": 0,
-      "fontSize": 13,
-      // "theme": "patterns",
-      "categoryAxis": {
-        "gridPosition": "start"
-      },
-      "trendLines": [],
-      "graphs": [
-        {
-          "balloonText": "Total patient: [[value]]",// "balloonText": "[[title]] of [[category]]:[[value]]",
-          "bulletColor": "red",
-          "bulletSize": 10,
-          "bullet": "round",
-          "id": "",
-          "lineAlpha": 1,
-          "lineColor":"red",
-          "lineThickness": 3,
-          "title": "graph 1",
-          "type": "smoothedLine",
-          "valueField": "column-1"
-        }
-      ],
-      "guides": [],
-      "valueAxes": [
-        {
-          "id": "ValueAxis-1",
-          "title": ""
-        }
-      ],
-      "allLabels": [],
-      "balloon": {},
-      "titles": [],
-      "dataProvider": [
-        {
-          "category": "Jan",
-          "column-1": 2756
-        },
-        {
-          "category": "Feb",
-          "column-1": 3063
-        },
-        {
-          "category": "Mar",
-          "column-1": 1089  
-        },
-        {
-          "category": "Apr ",
-          "column-1": 180
-        },
-        {
-          "category": "May ",
-          "column-1": 957
-        },
-        {
-          "category": "Jun ",
-          "column-1": 819 
-        },
-        {
-          "category": "Jul ",
-          "column-1": 4106
-        },
-        {
-          "category": "Aug ",
-          "column-1": 2756
-        },
-        {
-          "category": "Sep ",
-          "column-1": 3063
-        },
+        "trendLines": [],
+        "graphs": [{
+            "balloonText": "Total patient: [[value]]", // "balloonText": "[[title]] of [[category]]:[[value]]",
+            "bulletColor": "red",
+            "bulletSize": 10,
+            "bullet": "round",
+            "id": "",
+            "lineAlpha": 1,
+            "lineColor": "red",
+            "lineThickness": 3,
+            "title": "graph 1",
+            "type": "smoothedLine",
+            "valueField": "column-1"
+        }],
+        "guides": [],
+        "valueAxes": [{
+            "id": "ValueAxis-1",
+            "title": ""
+        }],
+        "allLabels": [],
+        "balloon": {},
+        "titles": [],
+        "dataProvider": [{
+                "category": "Jan",
+                "column-1": 2756
+            }, {
+                "category": "Feb",
+                "column-1": 3063
+            }, {
+                "category": "Mar",
+                "column-1": 1089
+            }, {
+                "category": "Apr ",
+                "column-1": 180
+            }, {
+                "category": "May ",
+                "column-1": 957
+            }, {
+                "category": "Jun ",
+                "column-1": 819
+            }, {
+                "category": "Jul ",
+                "column-1": 4106
+            }, {
+                "category": "Aug ",
+                "column-1": 2756
+            }, {
+                "category": "Sep ",
+                "column-1": 3063
+            },
 
-        {
-          "category": "Oct ",
-          "column-1": 1089
+            {
+                "category": "Oct ",
+                "column-1": 1089
+            }, {
+                "category": "Nov",
+                "column-1": 180
+            }, {
+                'category': 'Dec',
+                "column-1": 96
+            }
+        ]
+    });
+    AmCharts.makeChart("SEROLOGY", {
+        "type": "serial",
+        "categoryField": "category",
+        "autoMarginOffset": 40,
+        "marginRight": 60,
+        "marginTop": 60,
+        "startDuration": 0,
+        "fontSize": 13,
+        // "theme": "patterns",
+        "categoryAxis": {
+            "gridPosition": "start"
         },
-        {
-          "category": "Nov",
-          "column-1": 180
-        },
-        {
-          'category':'Dec',
-          "column-1":96
-        }
-      ]
-    }
-  );
-     AmCharts.makeChart("SEROLOGY",
-    {
-      "type": "serial",
-      "categoryField": "category",
-      "autoMarginOffset": 40,
-      "marginRight": 60,
-      "marginTop": 60,
-      "startDuration": 0,
-      "fontSize": 13,
-      // "theme": "patterns",
-      "categoryAxis": {
-        "gridPosition": "start"
-      },
-      "trendLines": [],
-      "graphs": [
-        {
-          "balloonText": "Total patient: [[value]]",// "balloonText": "[[title]] of [[category]]:[[value]]",
-          "bulletColor": "red",
-          "bulletSize": 10,
-          "bullet": "round",
-          "id": "",
-          "lineAlpha": 1,
-          "lineColor":"red",
-          "lineThickness": 3,
-          "title": "graph 1",
-          "type": "smoothedLine",
-          "valueField": "column-1"
-        }
-      ],
-      "guides": [],
-      "valueAxes": [
-        {
-          "id": "ValueAxis-1",
-          "title": ""
-        }
-      ],
-      "allLabels": [],
-      "balloon": {},
-      "titles": [],
-      "dataProvider": [
-        {
-          "category": "Jan",
-          "column-1": 39672
-        },
-        {
-          "category": "Feb",
-          "column-1": 38490
-        },
-        {
-          "category": "Mar",
-          "column-1": 43715
-        },
-        {
-          "category": "Apr ",
-          "column-1": 48672
-        },
-        {
-          "category": "May ",
-          "column-1": 39239
-        },
-        {
-          "category": "Jun ",
-          "column-1": 50505
-        },
-        {
-          "category": "Jul ",
-          "column-1": 35559
-        },
-        {
-          "category": "Aug ",
-          "column-1": 39239
-        },
-        {
-          "category": "Sep ",
-          "column-1": 43715
-        },
+        "trendLines": [],
+        "graphs": [{
+            "balloonText": "Total patient: [[value]]", // "balloonText": "[[title]] of [[category]]:[[value]]",
+            "bulletColor": "red",
+            "bulletSize": 10,
+            "bullet": "round",
+            "id": "",
+            "lineAlpha": 1,
+            "lineColor": "red",
+            "lineThickness": 3,
+            "title": "graph 1",
+            "type": "smoothedLine",
+            "valueField": "column-1"
+        }],
+        "guides": [],
+        "valueAxes": [{
+            "id": "ValueAxis-1",
+            "title": ""
+        }],
+        "allLabels": [],
+        "balloon": {},
+        "titles": [],
+        "dataProvider": [{
+                "category": "Jan",
+                "column-1": 39672
+            }, {
+                "category": "Feb",
+                "column-1": 38490
+            }, {
+                "category": "Mar",
+                "column-1": 43715
+            }, {
+                "category": "Apr ",
+                "column-1": 48672
+            }, {
+                "category": "May ",
+                "column-1": 39239
+            }, {
+                "category": "Jun ",
+                "column-1": 50505
+            }, {
+                "category": "Jul ",
+                "column-1": 35559
+            }, {
+                "category": "Aug ",
+                "column-1": 39239
+            }, {
+                "category": "Sep ",
+                "column-1": 43715
+            },
 
-        {
-          "category": "Oct ",
-          "column-1": 50505
+            {
+                "category": "Oct ",
+                "column-1": 50505
+            }, {
+                "category": "Nov",
+                "column-1": 48672
+            }, {
+                'category': 'Dec',
+                "column-1": 38490
+            }
+        ]
+    });
+    AmCharts.makeChart("MICROBIOLOGY", {
+        "type": "serial",
+        "categoryField": "category",
+        "autoMarginOffset": 40,
+        "marginRight": 60,
+        "marginTop": 60,
+        "startDuration": 0,
+        "fontSize": 13,
+        // "theme": "patterns",
+        "categoryAxis": {
+            "gridPosition": "start"
         },
-        {
-          "category": "Nov",
-          "column-1": 48672
-        },
-        {
-          'category':'Dec',
-          "column-1":38490
-        }
-      ]
-    }
-  );
-     AmCharts.makeChart("MICROBIOLOGY",
-    {
-      "type": "serial",
-      "categoryField": "category",
-      "autoMarginOffset": 40,
-      "marginRight": 60,
-      "marginTop": 60,
-      "startDuration": 0,
-      "fontSize": 13,
-      // "theme": "patterns",
-      "categoryAxis": {
-        "gridPosition": "start"
-      },
-      "trendLines": [],
-      "graphs": [
-        {
-          "balloonText": "Total patient: [[value]]",// "balloonText": "[[title]] of [[category]]:[[value]]",
-          "bulletColor": "red",
-          "bulletSize": 10,
-          "bullet": "round",
-          "id": "",
-          "lineAlpha": 1,
-          "lineColor":"red",
-          "lineThickness": 3,
-          "title": "graph 1",
-          "type": "smoothedLine",
-          "valueField": "column-1"
-        }
-      ],
-      "guides": [],
-      "valueAxes": [
-        {
-          "id": "ValueAxis-1",
-          "title": ""
-        }
-      ],
-      "allLabels": [],
-      "balloon": {},
-      "titles": [],
-      "dataProvider": [
-        {
-          "category": "Jan",
-          "column-1": 1284
-        },
-        {
-          "category": "Feb",
-          "column-1": 1218
-        },
-        {
-          "category": "Mar",
-          "column-1": 1530
-        },
-        {
-          "category": "Apr ",
-          "column-1": 1059
-        },
-        {
-          "category": "May ",
-          "column-1": 1226
-        },
-        {
-          "category": "Jun ",
-          "column-1": 1542
-        },
-        {
-          "category": "Jul ",
-          "column-1": 1152
-        },
-        {
-          "category": "Aug ",
-          "column-1": 1226
-        },
-        {
-          "category": "Sep ",
-          "column-1": 1530
-        },
+        "trendLines": [],
+        "graphs": [{
+            "balloonText": "Total patient: [[value]]", // "balloonText": "[[title]] of [[category]]:[[value]]",
+            "bulletColor": "red",
+            "bulletSize": 10,
+            "bullet": "round",
+            "id": "",
+            "lineAlpha": 1,
+            "lineColor": "red",
+            "lineThickness": 3,
+            "title": "graph 1",
+            "type": "smoothedLine",
+            "valueField": "column-1"
+        }],
+        "guides": [],
+        "valueAxes": [{
+            "id": "ValueAxis-1",
+            "title": ""
+        }],
+        "allLabels": [],
+        "balloon": {},
+        "titles": [],
+        "dataProvider": [{
+                "category": "Jan",
+                "column-1": 1284
+            }, {
+                "category": "Feb",
+                "column-1": 1218
+            }, {
+                "category": "Mar",
+                "column-1": 1530
+            }, {
+                "category": "Apr ",
+                "column-1": 1059
+            }, {
+                "category": "May ",
+                "column-1": 1226
+            }, {
+                "category": "Jun ",
+                "column-1": 1542
+            }, {
+                "category": "Jul ",
+                "column-1": 1152
+            }, {
+                "category": "Aug ",
+                "column-1": 1226
+            }, {
+                "category": "Sep ",
+                "column-1": 1530
+            },
 
-        {
-          "category": "Oct ",
-          "column-1": 1542
+            {
+                "category": "Oct ",
+                "column-1": 1542
+            }, {
+                "category": "Nov",
+                "column-1": 1059
+            }, {
+                'category': 'Dec',
+                "column-1": 1218
+            }
+        ]
+    });
+    AmCharts.makeChart("total", {
+        "type": "serial",
+        "categoryField": "category",
+        "autoMarginOffset": 40,
+        "marginRight": 60,
+        "marginTop": 60,
+        "startDuration": 0,
+        "fontSize": 13,
+        // "theme": "patterns",
+        "categoryAxis": {
+            "gridPosition": "start"
         },
-        {
-          "category": "Nov",
-          "column-1": 1059
-        },
-        {
-          'category':'Dec',
-          "column-1":1218
-        }
-      ]
-    }
-  );
-  AmCharts.makeChart("total",
-    {
-      "type": "serial",
-      "categoryField": "category",
-      "autoMarginOffset": 40,
-      "marginRight": 60,
-      "marginTop": 60,
-      "startDuration": 0,
-      "fontSize": 13,
-      // "theme": "patterns",
-      "categoryAxis": {
-        "gridPosition": "start"
-      },
-      "trendLines": [],
-      "graphs": [
-        {
-          "balloonText": "Total patient: [[value]]",// "balloonText": "[[title]] of [[category]]:[[value]]",
-          "bulletColor": "red",
-          "bulletSize": 10,
-          "bullet": "round",
-          "id": "",
-          "lineAlpha": 1,
-          "lineColor":"red",
-          "lineThickness": 3,
-          "title": "graph 1",
-          "type": "smoothedLine",
-          "valueField": "column-1"
-        }
-      ],
-      "guides": [],
-      "valueAxes": [
-        {
-          "id": "ValueAxis-1",
-          "title": ""
-        }
-      ],
-      "allLabels": [],
-      "balloon": {},
-      "titles": [],
-      "dataProvider": [
-        {
-          "category": "Jan",
-          "column-1": 230876
-        },
-        {
-          "category": "Feb",
-          "column-1": 227224
-        },
-        {
-          "category": "Mar",
-          "column-1": 241041  
-        },
-        {
-          "category": "Apr ",
-          "column-1": 264291
-        },
-        {
-          "category": "May ",
-          "column-1": 239251
-        },
-        {
-          "category": "Jun ",
-          "column-1": 253490 
-        },
-        {
-          "category": "Jul ",
-          "column-1": 213656
-        },
-        {
-          "category": "Aug ",
-          "column-1": 227937
-        },
-        {
-          "category": "Sep ",
-          "column-1": 238539
-        },
+        "trendLines": [],
+        "graphs": [{
+            "balloonText": "Total patient: [[value]]", // "balloonText": "[[title]] of [[category]]:[[value]]",
+            "bulletColor": "red",
+            "bulletSize": 10,
+            "bullet": "round",
+            "id": "",
+            "lineAlpha": 1,
+            "lineColor": "red",
+            "lineThickness": 3,
+            "title": "graph 1",
+            "type": "smoothedLine",
+            "valueField": "column-1"
+        }],
+        "guides": [],
+        "valueAxes": [{
+            "id": "ValueAxis-1",
+            "title": ""
+        }],
+        "allLabels": [],
+        "balloon": {},
+        "titles": [],
+        "dataProvider": [{
+                "category": "Jan",
+                "column-1": 230876
+            }, {
+                "category": "Feb",
+                "column-1": 227224
+            }, {
+                "category": "Mar",
+                "column-1": 241041
+            }, {
+                "category": "Apr ",
+                "column-1": 264291
+            }, {
+                "category": "May ",
+                "column-1": 239251
+            }, {
+                "category": "Jun ",
+                "column-1": 253490
+            }, {
+                "category": "Jul ",
+                "column-1": 213656
+            }, {
+                "category": "Aug ",
+                "column-1": 227937
+            }, {
+                "category": "Sep ",
+                "column-1": 238539
+            },
 
-        {
-          "category": "Oct ",
-          "column-1": 258985
-        },
-        {
-          "category": "Nov",
-          "column-1": 264291
-        },
-        {
-          'category':'Dec',
-          "column-1":233690
-        }
-      ]
-    }
-  );
-  $(document).ready(function(){
-  var idf=$('.amcharts-main-div').children('a').css('display','none');
-});
+            {
+                "category": "Oct ",
+                "column-1": 258985
+            }, {
+                "category": "Nov",
+                "column-1": 264291
+            }, {
+                'category': 'Dec',
+                "column-1": 233690
+            }
+        ]
+    });
+    $(document).ready(function() {
+        var idf = $('.amcharts-main-div').children('a').css('display', 'none');
+    });
 </script>
 
-  <style>
+<style>
     .news {
-      background-image: url("assets/images/imger/radiology1.jpg");
-      height: 400px;
-      margin-bottom: 30px;
-      background-repeat: no-repeat;
-      background-size: cover;
+        background-image: url("assets/images/imger/radiology1.jpg");
+        height: 400px;
+        margin-bottom: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-
+    
     .services-text {
-      margin: 80px 150px 80px 150px;
-      text-align: justify;
+        margin: 80px 150px 80px 150px;
+        text-align: justify;
     }
-
+    
     .innerIcon {
-      display: none;
+        display: none;
     }
-
+    
     .department-title {
-      text-align: center;
-      margin-top: 80px;
-      color: #666666;
-      font-weight: bold;
+        text-align: center;
+        margin-top: 80px;
+        color: #666666;
+        font-weight: bold;
     }
-
+    
     .department-title:after {
-      content: "";
-      /* This is necessary for the pseudo element to work. */
-      display: block;
-      /* This will put the pseudo element on its own line. */
-      margin: 0 auto;
-      /* This will center the border. */
-      width: 20%;
-      /* Change this to whatever width you want. */
-      padding-top: 10px;
-      /* This creates some space between the element and the border. */
-      border-bottom: 6px solid #c20303;
-      /* This creates the border. Replace black with whatever color you want. */
-      border-radius: 5px;
-      text-align: center;
-    }
-    @media only screen and (max-width: 640px) {
-      .horizontal-scrollable {
-        overflow-x: auto;
-        white-space: nowrap;
-      }
-
-      .horizontal-scrollable {
-        display: inline-block;
-        float: none;
-      }
-
-      .department-title:after {
         content: "";
         /* This is necessary for the pseudo element to work. */
         display: block;
         /* This will put the pseudo element on its own line. */
         margin: 0 auto;
         /* This will center the border. */
-        width: 50%;
+        width: 20%;
         /* Change this to whatever width you want. */
         padding-top: 10px;
         /* This creates some space between the element and the border. */
@@ -679,70 +527,81 @@
         /* This creates the border. Replace black with whatever color you want. */
         border-radius: 5px;
         text-align: center;
-      }
-
-      .department-title {
-        margin-bottom: 30px;
-      }
-
-      .services-text {
-        margin: 10px 10px;
-      }
-
-      .innerIcon {
-        display: block;
-      }
-
-      .news {
-        height: 120px;
-      }
-
-      marquee {
-        margin-left: 0px !important;
-        margin-top: px !important;
-        width: 100%;
-      }
-
-   
-
-      .last-service {
-        margin-bottom: -50px !important;
-      }
-
-      .our-service {
-        margin-top: -174px !important;
-        margin-bottom: 40px !important;
-      }
-
-      .departments {
-        margin-top: 0px !important;
-        height: 800px !important;
-      }
-
-      .departments h1 {
-        margin-top: 30px !important;
-        color: #fff;
-        z-index: 5;
-      }
     }
-  </style>
+    
+    @media only screen and (max-width: 640px) {
+        .horizontal-scrollable {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .horizontal-scrollable {
+            display: inline-block;
+            float: none;
+        }
+        .department-title:after {
+            content: "";
+            /* This is necessary for the pseudo element to work. */
+            display: block;
+            /* This will put the pseudo element on its own line. */
+            margin: 0 auto;
+            /* This will center the border. */
+            width: 50%;
+            /* Change this to whatever width you want. */
+            padding-top: 10px;
+            /* This creates some space between the element and the border. */
+            border-bottom: 6px solid #c20303;
+            /* This creates the border. Replace black with whatever color you want. */
+            border-radius: 5px;
+            text-align: center;
+        }
+        .department-title {
+            margin-bottom: 30px;
+        }
+        .services-text {
+            margin: 10px 10px;
+        }
+        .innerIcon {
+            display: block;
+        }
+        .news {
+            height: 120px;
+        }
+        marquee {
+            margin-left: 0px !important;
+            margin-top: px !important;
+            width: 100%;
+        }
+        .last-service {
+            margin-bottom: -50px !important;
+        }
+        .our-service {
+            margin-top: -174px !important;
+            margin-bottom: 40px !important;
+        }
+        .departments {
+            margin-top: 0px !important;
+            height: 800px !important;
+        }
+        .departments h1 {
+            margin-top: 30px !important;
+            color: #fff;
+            z-index: 5;
+        }
+    }
+</style>
 
-  <body>
+<body>
     <div class="fluid" style="overflow-x: hidden; overflow-y: hidden">
-      <div class="container">
-        <div class="row header">
-          <div class="col-lg-3 col-md">
-            <a href="index.html">
-              <img
-                class="mx-auto logo d-flex justify-content-center justify-content-sm-center"
-                src="./assets/images/web images/liaquit uni logo.png"
-                alt="LOGO "
-              />
-            </a>
-          </div>
-          <div class="col-lg-9 col-md">
-            <div class="">
-              <span class="iconsHeader header-icons" style="float: right">
+        <div class="container">
+            <div class="row header">
+                <div class="col-lg-3 col-md">
+                    <a href="index.html">
+                        <img class="mx-auto logo d-flex justify-content-center justify-content-sm-center" src="./assets/images/web images/liaquit uni logo.png" alt="LOGO " />
+                    </a>
+                </div>
+                <div class="col-lg-9 col-md">
+                    <div class="">
+                        <span class="iconsHeader header-icons" style="float: right">
                 <a
                   style="text-decoration: none"
                   href="https://www.facebook.com/CivilHospitalHyderabad/"
@@ -781,187 +640,177 @@
                               <i class="fa fa-twitter" aria-hidden="true"></i>
                             </a> -->
               </span>
-              <br /><br />
-              <p class="Heading text-sm-center text-md-center mx-auto">
-                LIAQUAT UNIVERSITY HOSPITAL
-              </p>
-              <p class="subHeading text-sm-center text-md-center">
-                HYDERABAD / JAMSHORO
-              </p>
+                        <br /><br />
+                        <p class="Heading text-sm-center text-md-center mx-auto">
+                            LIAQUAT UNIVERSITY HOSPITAL
+                        </p>
+                        <p class="subHeading text-sm-center text-md-center">
+                            HYDERABAD / JAMSHORO
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
 
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #bd0f0f !important ; margin-top: 0rem !important;">
-        <div class="container-fluid d-flex justify-content-center">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #bd0f0f !important ; margin-top: 0rem !important;">
+            <div class="container-fluid d-flex justify-content-center">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li style="font-size: 1rem; font-weight:bold;" class="nav-item">
-                        <a class="nav-link" style="color: white ;" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li style="font-size: 1rem; font-weight:bold;" class="nav-item">
-                        <a class="nav-link" style="color: white ;" href="./about-us.html">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown" style="font-size: 1rem; font-weight:bold;">
-                        <a class="nav-link dropdown-toggle" style="color: white ;" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                        <li style="font-size: 1rem; font-weight:bold;" class="nav-item">
+                            <a class="nav-link" style="color: white ;" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li style="font-size: 1rem; font-weight:bold;" class="nav-item">
+                            <a class="nav-link" style="color: white ;" href="./about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown" style="font-size: 1rem; font-weight:bold;">
+                            <a class="nav-link dropdown-toggle" style="color: white ;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                            Services
                         </a>
-                        <ul class="dropdown-menu" style="background-color:#bd0f0f;" aria-labelledby="navbarDropdown">
-                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="opd.html">Out-Patients services</a></li>
-                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="casulity-emergency.html">Casuality & Emergency Services</a></li>
-                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="laboratory.html">Laboratory</a></li>
-                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="Radiology.html">Radiology</a></li>
-                            
-                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="ics.html">Intensive Care Services</a></li>
-                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="kitchen.html">kitchen</a></li>
-                            
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown" style="font-size: 1rem; font-weight:bold;">
-                        <a class="nav-link dropdown-toggle" style="color: white ;" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <ul class="dropdown-menu" style="background-color:#bd0f0f;" aria-labelledby="navbarDropdown">
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="opd.html">Out-Patients services</a></li>
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="casulity-emergency.html">Casuality & Emergency Services</a></li>
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="laboratory.html">Laboratory</a></li>
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="Radiology.html">Radiology</a></li>
+
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="ics.html">Intensive Care Services</a></li>
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="kitchen.html">kitchen</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="font-size: 1rem; font-weight:bold;">
+                            <a class="nav-link dropdown-toggle" style="color: white ;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Departments
+                        </a>
+                            <ul class="dropdown-menu" style="background-color:#bd0f0f;" aria-labelledby="navbarDropdown">
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="Anesthesia.html">Anesthesia</a></li>
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="Broncoscopy.html">Broncoscopy</a></li>
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="Burns.html">Burns</a></li>
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="cardiacCareuntis.html">Cardiac Care untis</a></li>
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="cardiacmergency.html">Cardiac Emergency</a></li>
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="cardiology.html">Cardiology</a></li>
+                                <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="chestmedicines.html">Chest Medicines</a></li>
+                                <li>
+
+
+                            </ul>
+                            </li>
+                            <li class="nav-item dropdown" style="font-size: 1rem; font-weight:bold;">
+                                <a class="nav-link dropdown-toggle" style="color: white ;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Reports
                         </a>
-                        <ul class="dropdown-menu" style="background-color:#bd0f0f;" aria-labelledby="navbarDropdown">
-                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="patients.html">Patients</a></li>
-                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="pathology.html">Pathology</a></li>
-                            <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="radiology-reports.html">Radiology</a></li>
-                            <li>
-                           
-                          
-                        </ul>
-                    </li>
-                    <li style="font-size: 1rem; font-weight:bold;" class="nav-item">
-                        <a class="nav-link " style="color: white ;" href="gallery.html" tabindex="-1" aria-disabled="true">Gallery</a>
-                    </li>
-                    <li class="nav-item" style="font-size: 1rem; font-weight:bold;">
-                        <a class="nav-link " style="color: white ;" href="messages.html" tabindex="-1" aria-disabled="true">Messages</a>
-                    </li>
-                    <li class="nav-item" style="font-size: 1rem; font-weight:bold;">
-                        <a class="nav-link " style="color: white ;" href="news.html" tabindex="-1" aria-disabled="true">News & Events</a>
-                    </li>
-                    <li class="nav-item" style="font-size: 1rem; font-weight:bold;">
-                        <a class="nav-link " style="color: white ;" href="contact.html" tabindex="-1" aria-disabled="true">Contact Us</a>
-                    </li>
+                                <ul class="dropdown-menu" style="background-color:#bd0f0f;" aria-labelledby="navbarDropdown">
+                                    <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="patients.html">Patients</a></li>
+                                    <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="pathology.html">Pathology</a></li>
+                                    <li style="font-size: 1rem; font-weight:bold;"><a class="dropdown-item" style="color: white ;" href="radiology-reports.html">Radiology</a></li>
+                                    <li>
 
-                </ul>
-                
+
+                                </ul>
+                                </li>
+                                <li style="font-size: 1rem; font-weight:bold;" class="nav-item">
+                                    <a class="nav-link " style="color: white ;" href="gallery.html" tabindex="-1" aria-disabled="true">Gallery</a>
+                                </li>
+                                <li class="nav-item" style="font-size: 1rem; font-weight:bold;">
+                                    <a class="nav-link " style="color: white ;" href="messages.html" tabindex="-1" aria-disabled="true">Messages</a>
+                                </li>
+                                <li class="nav-item" style="font-size: 1rem; font-weight:bold;">
+                                    <a class="nav-link " style="color: white ;" href="news.html" tabindex="-1" aria-disabled="true">News & Events</a>
+                                </li>
+                                <li class="nav-item" style="font-size: 1rem; font-weight:bold;">
+                                    <a class="nav-link " style="color: white ;" href="contact.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+                                </li>
+
+                    </ul>
+
+                </div>
             </div>
-        </div>
-    </nav>
-      <!-- navbar end -->
-      <marquee style="margin-top: 0.8rem; margin-bottom: 0"
-        ><i style="color: #c20303" class="fa fa-circle"></i> &nbsp;Protect
-        Yourself Against COVID 19. &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
-        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-        <i style="color: #c20303" class="fa fa-circle"></i> &nbsp; Wear a Mask.
-        &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
-        &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-        <i style="color: #c20303" class="fa fa-circle"></i> &nbsp; Wash Your
-        Hands Frequently &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-        &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-        <i style="color: #c20303" class="fa fa-circle"></i> &nbsp; Dont Touch
-        Eyes, Nose, or Mouth with unwashed hands.
-      </marquee>
+        </nav>
+        <!-- navbar end -->
+        <marquee style="margin-top: 0.8rem; margin-bottom: 0"><i style="color: #c20303" class="fa fa-circle"></i> &nbsp;Protect Yourself Against COVID 19. &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            <i style="color: #c20303" class="fa fa-circle"></i> &nbsp; Wear a Mask. &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            <i style="color: #c20303" class="fa fa-circle"></i> &nbsp; Wash Your Hands Frequently &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            <i style="color: #c20303" class="fa fa-circle"></i> &nbsp; Dont Touch Eyes, Nose, or Mouth with unwashed hands.
+        </marquee>
 
-      <!-- mysidenav bar-->
-      <div id="mySidenav" class="sidenav">
-        <a href="#" class="title" id="about"
-          >SHCC <title>Sindh health care</title
+        <!-- mysidenav bar-->
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="title" id="about">SHCC <title>Sindh health care</title
           ><img src="assets/SSarYX.svg" height="40px;" />
         </a>
-      </div>
-      <section> 
-        <div class="news"></div>
-        <h2 class="department-title" >Radiology  Statistics 2021 </h2>
-         <h2 class="text-center" ><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:#c20303; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 814936</span> </h2>
-         <canvas id="total" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
-    
-    
-         <h2 class="department-title" >X-RAY   </h2>
-          <h2 class="text-center" ><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:green; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 443456</span> </h2>
-         <canvas id="xray" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
-    
-    
-         <h2 class="department-title" >ULTRA -SOUND </h2>
-          <h2 class="text-center" ><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:blue; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 257426</span> </h2>
-         <canvas id="ULTRA" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
-    
-    
-          <h2 class="department-title"> CT SCAN </h2>
-           <h2 class="text-center" ><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:#008080; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 92883</span> </h2>
-         <canvas id="ct" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
-    
-    
-         <h2 class="department-title" >MRI </h2>
-          <h2 class="text-center" ><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:#c20303; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 16853</span> </h2>
-         <canvas id="mri" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
-    
-    
-         <h2 class="department-title" >MAMMO - GRAPHY 
-     </h2>
-      <h2 class="text-center" ><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:#a0522d; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 2627</span> </h2>
-         <canvas id="memo" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
-         
-    
-    
-    
-         <!--<h2 class="department-title" >ELASTO- GRAPHY </h2>-->
-         <!-- <h2 class="text-center" ><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:#483d8b; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 151</span> </h2>-->
-         <!--<canvas id="elsto" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>-->
-         <h2 class="department-title" >SPECIAL PROCEDURE </h2>
-     <h2 class="text-center" ><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:#2e8b57; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 1540</span> </h2>
-         <canvas id="special" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
+        </div>
+        <section>
+            <div class="news"></div>
+            <h2 class="department-title">Radiology Statistics 2021 </h2>
+            <h2 class="text-center"><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:#c20303; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 814936</span> </h2>
+            <canvas id="total" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
+
+
+            <h2 class="department-title">X-RAY </h2>
+            <h2 class="text-center"><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:green; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 443456</span> </h2>
+            <canvas id="xray" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
+
+
+            <h2 class="department-title">ULTRA -SOUND </h2>
+            <h2 class="text-center"><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:blue; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 257426</span> </h2>
+            <canvas id="ULTRA" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
+
+
+            <h2 class="department-title"> CT SCAN </h2>
+            <h2 class="text-center"><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:#008080; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 92883</span> </h2>
+            <canvas id="ct" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
+
+
+            <h2 class="department-title">MRI </h2>
+            <h2 class="text-center"><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:#c20303; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 16853</span> </h2>
+            <canvas id="mri" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
+
+
+            <h2 class="department-title">MAMMO - GRAPHY
+            </h2>
+            <h2 class="text-center"><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:#a0522d; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 2627</span> </h2>
+            <canvas id="memo" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
+
+
+
+
+            <!--<h2 class="department-title" >ELASTO- GRAPHY </h2>-->
+            <!-- <h2 class="text-center" ><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:#483d8b; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 151</span> </h2>-->
+            <!--<canvas id="elsto" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>-->
+            <h2 class="department-title">SPECIAL PROCEDURE </h2>
+            <h2 class="text-center"><span style="margin-top:20px; height:70px; width:250px; padding:15px; background-color:#2e8b57; font-size:15px;color:#fff; margin-right:3px;">No of Tests = 1540</span> </h2>
+            <canvas id="special" style="height: 300px; width: 100%;  margin-right: 100px"></canvas>
         </section>
-    <!-- footer -->
-    <section>
-      <footer class="footer-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md">
-              <img
-                style="margin-bottom: 30px"
-                width="210"
-                height="210"
-                src="assets/images/web images/lpage.png"
-              />
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <p
-                class="fc"
-                style="
+        <!-- footer -->
+        <section>
+            <footer class="footer-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md">
+                            <img style="margin-bottom: 30px" width="210" height="210" src="assets/images/web images/lpage.png" />
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <p class="fc" style="
                   margin-top: 50px;
                   line-height: 1.8;
                   text-align: justify-all;
                   margin-right: 30px;
                   margin-left: -50px;
-                "
-              >
-                Liaquat University Hospital (LUH) in Sindh is a multispeciality
-                hospital providing complete medical as well as surgical care.
-              </p>
-            </div>
-            <div class="col-lg-3 col-md">
-              <h4
-                style="margin-top: 30px; margin-bottom: 10px; font-size: 20px"
-              >
-                Infromation
-              </h4>
-              <ul class="ql">
-                <li>
-                  <a
-                    style="color: white; text-decoration: none"
-                    href="developmental-projects.html"
-                    >Developmental Projects</a
+                ">
+                                Liaquat University Hospital (LUH) in Sindh is a multispeciality hospital providing complete medical as well as surgical care.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md">
+                            <h4 style="margin-top: 30px; margin-bottom: 10px; font-size: 20px">
+                                Infromation
+                            </h4>
+                            <ul class="ql">
+                                <li>
+                                    <a style="color: white; text-decoration: none" href="developmental-projects.html">Developmental Projects</a
                   >
                 </li>
                 <li>
@@ -971,12 +820,9 @@
                     href="public-private-partnership"
                     >Public – Private Partnership / Collaborators
                   </a>
-                </li>
-                <li>
-                  <a
-                    style="color: white; text-decoration: none"
-                    href="post-graduation.html"
-                  >
+                                </li>
+                                <li>
+                                    <a style="color: white; text-decoration: none" href="post-graduation.html">
                     Teaching & Training</a
                   >
                 </li>
@@ -1069,426 +915,481 @@
             >
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a
-              style="color: white; text-decoration: none"
-              href="https://youtube.com/channel/UCp17EWWRyp7KVsF7Jk5KivA"
-              target="_blank"
-            >
-              <i class="fa fa-youtube" aria-hidden="true"></i>
-            </a>
-            <a
-              style="color: white; text-decoration: none"
-              href="https://twitter.com/HospitalLiaquat"
-              target="_blank"
-            >
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a
-              style="color: white; text-decoration: none"
-              href="https://www.instagram.com/lums_university_hospital"
-              target="_blank"
-            >
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <!--  <i class="fa fa-instagram" aria-hidden="true"></i> -->
-          </div>
+                                    <a style="color: white; text-decoration: none" href="https://youtube.com/channel/UCp17EWWRyp7KVsF7Jk5KivA" target="_blank">
+                                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                                    </a>
+                                    <a style="color: white; text-decoration: none" href="https://twitter.com/HospitalLiaquat" target="_blank">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                    <a style="color: white; text-decoration: none" href="https://www.instagram.com/lums_university_hospital" target="_blank">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                    <!--  <i class="fa fa-instagram" aria-hidden="true"></i> -->
+                        </div>
+                    </div>
+            </footer>
+        </section>
+        <div class="fluid footer-section" style="margin-bottom: 1px">
+            <div class="copyright">
+                <span>© 2022 LUH All Rights Reserved</span>
+            </div>
         </div>
-      </footer>
-    </section>
-    <div class="fluid footer-section" style="margin-bottom: 1px">
-      <div class="copyright">
-        <span>© 2022 LUH All Rights Reserved</span>
-      </div>
-    </div>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
 </html>
 <script>
-
-    $(document).ready(function(){
+    $(document).ready(function() {
 
         var newWindowWidth = $(window).width();
         if (newWindowWidth < 664) {
-          $('.content-text-box').css('display','none');
-          $(".dptfull").css("display","none");
+            $('.content-text-box').css('display', 'none');
+            $(".dptfull").css("display", "none");
         }
         if (newWindowWidth > 664) {
-          $(".dptsm").css("display","none");
-          $(".d2").css('display','none');
+            $(".dptsm").css("display", "none");
+            $(".d2").css('display', 'none');
         }
 
     });
 
-  function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-
-$(document).ready(function(){
-  $('.lg-depart').on('click',function(){
-     var ID=$(this).attr('title');
-    $.ajax({ 
-    type: 'GET', 
-    url: 'getDepart',
-    dataType: 'json',
-    data: { id: ID },
-    success: function (data) {
-      printMsg(data);
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
     }
-});
-});
-function printMsg (msg) {
-              if($.isEmptyObject(msg.error)){
-                  console.log(msg.success);
-                 rewerwer
-              }else{
-                $.each( msg.error, function( key, value ) {
-                 asdfsdf
+
+
+    $(document).ready(function() {
+        $('.lg-depart').on('click', function() {
+            var ID = $(this).attr('title');
+            $.ajax({
+                type: 'GET',
+                url: 'getDepart',
+                dataType: 'json',
+                data: {
+                    id: ID
+                },
+                success: function(data) {
+                    printMsg(data);
+                }
+            });
+        });
+
+        function printMsg(msg) {
+            if ($.isEmptyObject(msg.error)) {
+                console.log(msg.success);
+                rewerwer
+            } else {
+                $.each(msg.error, function(key, value) {
+                    asdfsdf
                 });
-              }
             }
-});
+        }
+    });
 </script>
 <script>
-var xValues = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-var yValues = [700,800,508,709,509,905,410,451,314,414,415,400];
-var yValues=[
-56206,
-61368,
-69561,
-64165,
-57727,
-72319,
-69263,
-70910,
-74646,
-76615,
-74838,
-67318
+    var xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var yValues = [700, 800, 508, 709, 509, 905, 410, 451, 314, 414, 415, 400];
+    var yValues = [
+        56206,
+        61368,
+        69561,
+        64165,
+        57727,
+        72319,
+        69263,
+        70910,
+        74646,
+        76615,
+        74838,
+        67318
 
 
-];
+    ];
 
-new Chart("total", {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [{
-      fill: false,
-      lineTension: 0,
-      backgroundColor: "red",
-      borderColor:"blue",pointRadius:"10",
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    scales: {
-      yAxes: [{ticks: {min:55000, max:80000}}],
-    }
-  }
-});
-</script>
-
-<script>
-var xValues = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-var yValues = [700,800,508,709,509,905,410,451,314,414,415,400];
-var yValues=[
-29057,
-33569,
-39428,
-36746,
-33617,
-39974,
-38250,
-37721,
-39555,
-40727,
-39173,
-35639
-
-
-
-];
-
-new Chart("xray", {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [{
-      fill: false,
-      lineTension: 0,
-      backgroundColor: "green",
-      borderColor:"	#FFFF00",pointRadius:"10",
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    scales: {
-      yAxes: [{ticks: {min:29000, max:45000}}],
-    }
-  }
-});
-</script>
-<script>
-var xValues = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-var yValues = [700,800,508,709,509,905,410,451,314,414,415,400];
-var yValues=[
-19407,
-20058,
-20576,
-18684,
-16365,
-22286,
-21359,
-23207,
-24072,
-24714,
-24915,
-21783
-
-
-
-
-];
-
-new Chart("ULTRA", {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [{
-         pointRadius:'8',
-      fill: false,
-      lineTension: 0,
-      backgroundColor: "blue",
-      borderColor:"#008000",pointRadius:"10",
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    scales: {
-      yAxes: [{ticks: {min:15000, max:25000}}],
-    }
-  }
-});
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-var xValues = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-var yValues = [700,800,508,709,509,905,410,451,314,414,415,400];
-var yValues=[
-
-6399,
-6245,
-7844,
-7131,
-6539,
-8166,
-8072,
-8247,
-9011,
-8831,
-8394,
-8004
-];
-
-new Chart("ct", {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [{
-      fill: false,
-      lineTension: 0,
-      backgroundColor: "#008080",
-      borderColor:"#800000",pointRadius:"10",
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    scales: {
-      yAxes: [{ticks: {min:6000, max:9000}}],
-    }
-  }
-});
-</script>
-<script>
-var xValues = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-var yValues = [700,800,508,709,509,905,410,451,314,414,415,400];
-var yValues=[
-1017,
-1160,
-1440,
-1380,
-995,
-1568,
-1250,
-1367,
-1607,
-1737,
-1835,
-1497
-];
-new Chart("mri", {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [{
-      fill: false,
-      lineTension: 0,
-      backgroundColor: "#c20303",
-      borderColor:" #00fa9a",pointRadius:"10",
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    scales: {
-      yAxes: [{ticks: {min:900, max:2000}}],
-    }
-  }
-});
-</script>
-
-
-<script>
-var xValues = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-var yValues = [700,800,508,709,509,905,410,451,314,414,415,400];
-var yValues=[
-
-140,
-149,
-114,
-144,
-131,
-161,
-216,
-233,
-266,
-453,
-348,
-272
-
-];
-
-new Chart("memo", {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [{
-       fill: false,
-      lineTension: 0,
-      backgroundColor: "#a0522d",
-      borderColor:"#dc143c",pointRadius:"10",
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    scales: {
-      yAxes: [{ticks: {min:100, max:500}}],
-    }
-  }
-});
-</script>
-<script>
-var xValues = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-var yValues = [700,800,508,709,509,905,410,451,314,414,415,400];
-var yValues=[
-42,
-41,
-24,
-36,
-6,
-2,
-0,
-0,
-0,
-0,
-0,
-0
-
-];
-new Chart("elsto", {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [{
-      fill: false,
-      lineTension: 0,
-      backgroundColor: "#483d8b",
-      borderColor:"#dc143c",pointRadius:"10",
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    scales: {
-      yAxes: [{ticks: {min:0, max:50}}],
-    }
-  }
-});
+    new Chart("total", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "red",
+                borderColor: "blue",
+                pointRadius: "10",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 55000,
+                        max: 80000
+                    }
+                }],
+            }
+        }
+    });
 </script>
 
 <script>
-var xValues = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-var yValues = [700,800,508,709,509,905,410,451,314,414,415,400];
-var yValues=[
-144,
-146,
-135,
-44,
-74,
-162,
-116,
-135,
-135,
-153,
-173,
-123
+    var xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var yValues = [700, 800, 508, 709, 509, 905, 410, 451, 314, 414, 415, 400];
+    var yValues = [
+        29057,
+        33569,
+        39428,
+        36746,
+        33617,
+        39974,
+        38250,
+        37721,
+        39555,
+        40727,
+        39173,
+        35639
 
 
-];
-new Chart("special", {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [{
-      fill: false,
-      lineTension: 0,
-      backgroundColor: "#2e8b57",
-      borderColor:"#00ff7f",pointRadius:"10",
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    scales: {
-      yAxes: [{ticks: {min:30, max:300}}],
-    }
-  }
-});
+
+    ];
+
+    new Chart("xray", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "green",
+                borderColor: "	#FFFF00",
+                pointRadius: "10",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 29000,
+                        max: 45000
+                    }
+                }],
+            }
+        }
+    });
+</script>
+<script>
+    var xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var yValues = [700, 800, 508, 709, 509, 905, 410, 451, 314, 414, 415, 400];
+    var yValues = [
+        19407,
+        20058,
+        20576,
+        18684,
+        16365,
+        22286,
+        21359,
+        23207,
+        24072,
+        24714,
+        24915,
+        21783
+
+
+
+
+    ];
+
+    new Chart("ULTRA", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                pointRadius: '8',
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "blue",
+                borderColor: "#008000",
+                pointRadius: "10",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 15000,
+                        max: 25000
+                    }
+                }],
+            }
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var yValues = [700, 800, 508, 709, 509, 905, 410, 451, 314, 414, 415, 400];
+    var yValues = [
+
+        6399,
+        6245,
+        7844,
+        7131,
+        6539,
+        8166,
+        8072,
+        8247,
+        9011,
+        8831,
+        8394,
+        8004
+    ];
+
+    new Chart("ct", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "#008080",
+                borderColor: "#800000",
+                pointRadius: "10",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 6000,
+                        max: 9000
+                    }
+                }],
+            }
+        }
+    });
+</script>
+<script>
+    var xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var yValues = [700, 800, 508, 709, 509, 905, 410, 451, 314, 414, 415, 400];
+    var yValues = [
+        1017,
+        1160,
+        1440,
+        1380,
+        995,
+        1568,
+        1250,
+        1367,
+        1607,
+        1737,
+        1835,
+        1497
+    ];
+    new Chart("mri", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "#c20303",
+                borderColor: " #00fa9a",
+                pointRadius: "10",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 900,
+                        max: 2000
+                    }
+                }],
+            }
+        }
+    });
+</script>
+
+
+<script>
+    var xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var yValues = [700, 800, 508, 709, 509, 905, 410, 451, 314, 414, 415, 400];
+    var yValues = [
+
+        140,
+        149,
+        114,
+        144,
+        131,
+        161,
+        216,
+        233,
+        266,
+        453,
+        348,
+        272
+
+    ];
+
+    new Chart("memo", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "#a0522d",
+                borderColor: "#dc143c",
+                pointRadius: "10",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 100,
+                        max: 500
+                    }
+                }],
+            }
+        }
+    });
+</script>
+<script>
+    var xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var yValues = [700, 800, 508, 709, 509, 905, 410, 451, 314, 414, 415, 400];
+    var yValues = [
+        42,
+        41,
+        24,
+        36,
+        6,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+
+    ];
+    new Chart("elsto", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "#483d8b",
+                borderColor: "#dc143c",
+                pointRadius: "10",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 0,
+                        max: 50
+                    }
+                }],
+            }
+        }
+    });
+</script>
+
+<script>
+    var xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var yValues = [700, 800, 508, 709, 509, 905, 410, 451, 314, 414, 415, 400];
+    var yValues = [
+        144,
+        146,
+        135,
+        44,
+        74,
+        162,
+        116,
+        135,
+        135,
+        153,
+        173,
+        123
+
+
+    ];
+    new Chart("special", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "#2e8b57",
+                borderColor: "#00ff7f",
+                pointRadius: "10",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 30,
+                        max: 300
+                    }
+                }],
+            }
+        }
+    });
 </script>
